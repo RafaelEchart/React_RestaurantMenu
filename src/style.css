@@ -1,0 +1,225 @@
+@import url("http://fonts.cdnfonts.com/css/countryside");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--main-font);
+  background:
+    radial-gradient(
+      ellipse farthest-corner at center top,
+      var(--gradient-color) 0%,
+      var(--primary-color) 100%
+    );
+  min-height: 100vh;
+}
+
+.header {
+  align-items: center;
+  justify-content: space-between;
+  position: unset;
+  width: 100%;
+  z-index: 3;
+  height: 0;
+  margin-bottom: 40px;
+}
+
+.max-width-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1350px;
+  margin: auto;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 27px;
+  padding: 10px 20px;
+  margin-top: 6.5px;
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-style: normal;
+}
+
+a {
+  color: #344563;
+  font-family: var(--main-font);
+  font-weight: 400;
+}
+
+.desktopMenu-up {
+  display: block;
+}
+
+.topnav {
+  width: fit-content;
+  font-family: var(--main-font);
+}
+
+.topnav a {
+  text-decoration: none;
+  font-size: 16px;
+  padding: 7px 16px;
+}
+
+.select-tag {
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  flex: 1;
+  padding: 0 1em;
+  color: var(--light-color);
+  background-color: #0365ac;
+  background-image: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.select {
+  position: relative;
+  width: 20em;
+  height: 3em;
+  border-radius: 0.25em;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #024e85;
+  transition: 0.25s all ease;
+  pointer-events: none;
+}
+
+/* Transition */
+.select:hover::after {
+  color: #29a3fb;
+}
+
+.banner {
+  width: 100%;
+  height: 65vh;
+  background-image: url("https://www.themealdb.com/images/category/chicken.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 230px;
+}
+
+.banner h1 {
+  font-size: 45px;
+  color: #dbdbdb;
+  font-family: var(--title-font);
+  height: 30%;
+  margin: 0;
+}
+
+.banner span {
+  height: 19%;
+  margin-top: 60px;
+  color: var(--secondary-color);
+}
+
+.innerAligment {
+  max-width: 550px;
+  min-width: 250px;
+  margin: 30px 30px -70px 30px;
+  text-align: center;
+  height: 140px;
+}
+
+.cards {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  grid-gap: 1rem;
+}
+
+.flex-card {
+  flex-wrap: wrap;
+  max-width: 100%;
+  transition-property: border-color, box-shadow;
+  transition-duration: 1.5s;
+}
+
+.align_images {
+  margin: auto;
+}
+
+.imagen_proyectos {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.text_child h2 {
+  font-weight: 700;
+  line-height: 35px;
+  margin: 15px 0 0 0;
+}
+
+.text_child p {
+  color: #344563;
+  word-break: normal;
+  max-width: 430px;
+}
+
+.text_child {
+  margin-left: 2%;
+}
+
+.card {
+  background-color: var(--light-color);
+  padding: 1rem;
+  margin: 0 2% 2% 2%;
+  width: 300px;
+  border: 2px solid #dfe1e6;
+  border-radius: 24px;
+}
+
+.gray_text {
+  color: gray;
+  margin-left: 13px;
+  font-size: 0.8rem;
+}
+
+.SeeCommentsButton {
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: var(--light-color);
+  height: 48px;
+  margin-top: 25px;
+  margin-bottom: 19px;
+  color: var(--primary-color);
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.SeeCommentsButton:hover {
+  background: var(--gradient-color);
+  color: var(--light-color);
+  transition: 0.2s 0.1s;
+}
+
+.SeeCommentsButton:active {
+  background: var(--primary-color);
+  color: var(--light-color);
+  transition: 0s 0s;
+}
+
+.SeeCommentsButton span {
+  margin: 0 10px;
+  font-family: var(--main-font);
+  font-weight: 200;
+  font-size: 17px;
+  line-height: 24px;
+}

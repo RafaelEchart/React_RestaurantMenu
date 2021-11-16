@@ -1,5 +1,5 @@
 {
-  "name": "Restaurant_Capstone",
+  "name": "restaurant_capstone",
   "jest": {
     "setupFiles": [
       "./src/tests/globalHTMLmock.js"

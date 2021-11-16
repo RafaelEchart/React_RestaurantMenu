@@ -49,6 +49,6 @@
   "dependencies": {
     "jest": "^27.3.1",
     "jsdom": "^18.0.1",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.21"
   }
 }

@@ -5,45 +5,44 @@ const arrayOfDishes = [
   {
     idMeal: '52772',
     strMeal: 'Teriyaki Chicken Casserole',
-    strMealThumb: "https://www.themealdb.com/images/media/meals/wvpsxx1468256321.jpg",
-    strTags: ["Meat", "Casserole"],
-     },
+    strMealThumb: 'https://www.themealdb.com/images/media/meals/wvpsxx1468256321.jpg',
+    strTags: ['Meat', 'Casserole'],
+  },
   {
     idMeal: '52773',
     strMeal: 'Honey Teriyaki Salmon',
-    strMealThumb: "https:\/\/www.themealdb.com\/images\/media\/meals\/xxyupu1468262513.jpg",
-    strTags: ["Meat", "Casserole"],
-     },
+    strMealThumb: 'https://www.themealdb.com//images//media//meals//xxyupu1468262513.jpg',
+    strTags: ['Meat', 'Casserole'],
+  },
   {
     idMeal: '52774',
     strMeal: 'Pad See Ew',
-    strMealThumb: "https:\/\/www.themealdb.com\/images\/media\/meals\/uuuspp1468263334.jpg",
-    strTags: ["Meat", "Casserole"],
-     },
+    strMealThumb: 'https://www.themealdb.com//images//media//meals//uuuspp1468263334.jpg',
+    strTags: ['Meat', 'Casserole'],
+  },
   {
     idMeal: '52775',
     strMeal: 'Vegan Lasagna',
-    strMealThumb: "https:\/\/www.themealdb.com\/images\/media\/meals\/rvxxuy1468312893.jpg",
-    strTags: ["Meat", "Casserole"],
-     },
+    strMealThumb: 'https://www.themealdb.com//images//media//meals//rvxxuy1468312893.jpg',
+    strTags: ['Meat', 'Casserole'],
+  },
   {
     idMeal: '52776',
     strMeal: 'Chocolate Gateau',
-    strMealThumb: "https:\/\/www.themealdb.com\/images\/media\/meals\/tqtywx1468317395.jpg",
-    strTags: ["Meat", "Casserole"],
-     },
+    strMealThumb: 'https://www.themealdb.com//images//media//meals//tqtywx1468317395.jpg',
+    strTags: ['Meat', 'Casserole'],
+  },
   {
     idMeal: '52777',
     strMeal: 'Mediterranean Pasta Salad',
-    strMealThumb: "https:\/\/www.themealdb.com\/images\/media\/meals\/wvqpwt1468339226.jpg",
-    strTags: ["Meat", "Casserole"],
-     },
-  
-  
+    strMealThumb: 'https://www.themealdb.com//images//media//meals//wvqpwt1468339226.jpg',
+    strTags: ['Meat', 'Casserole'],
+  },
+
 ];
 
 for (let x = 0; x < arrayOfDishes.length; x += 1) {
-    foodDishes.innerHTML += `<div class="card division flex-card">
+  foodDishes.innerHTML += `<div class="card division flex-card">
       <div class="align_images">
         <img
           src="${arrayOfDishes[x].strMealThumb}"
@@ -64,4 +63,4 @@ for (let x = 0; x < arrayOfDishes.length; x += 1) {
           </button>
         </div>
     </div>`;
-  }
+}

@@ -1,11 +1,11 @@
 @import url("http://fonts.cdnfonts.com/css/countryside");
 
-:root{
---primary-color : #012138;
---secondary-color: #f9f9f9;
---gradient-color: #024d83;
-
+:root {
+  --primary-color: #012138;
+  --secondary-color: #f9f9f9;
+  --gradient-color: #024d83;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -13,11 +13,12 @@ html {
 body {
   margin: 0;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  background: radial-gradient(
-    ellipse farthest-corner at center top,
-    var(--gradient-color) 0%,
-    var(--primary-color) 100%
-  );
+  background:
+    radial-gradient(
+      ellipse farthest-corner at center top,
+      var(--gradient-color) 0%,
+      var(--primary-color) 100%
+    );
   min-height: 100vh;
 }
 
@@ -26,12 +27,15 @@ body {
   align-items: center;
   justify-content: space-between;
   position: unset;
+
   /* background-color: #fff; */
+
   /* box-shadow: 1px 1px 4px 0 rgb(0 0 0 / 10%); */
   width: 100%;
   z-index: 3;
-  height: 0px;
+  height: 0;
   margin-bottom: 40px;
+
   /* margin-bottom: 100px; */
 }
 
@@ -110,6 +114,7 @@ a {
   transition: 0.25s all ease;
   pointer-events: none;
 }
+
 /* Transition */
 .select:hover::after {
   color: #29a3fb;
@@ -140,6 +145,7 @@ a {
   margin-top: 60px;
   color: var(--secondary-color);
 }
+
 .innerAligment {
   display: flex;
   justify-content: center;
@@ -162,6 +168,7 @@ a {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .flex-card {
   display: flex;
   flex-direction: row;
@@ -170,6 +177,7 @@ a {
   transition-property: border-color, box-shadow;
   transition-duration: 1.5s;
 }
+
 .align_images {
   margin: auto;
 }
@@ -183,8 +191,8 @@ a {
   font-weight: 700;
   line-height: 25px;
   line-height: 35px;
-  margin: 0px;
-      margin-top: 15px;
+  margin: 0;
+  margin-top: 15px;
 }
 
 .text_child p {
@@ -207,17 +215,12 @@ a {
 .card {
   background-color: #fff;
   padding: 1rem;
+  margin: 0 2% 0 2%;
   margin-left: 4%;
   margin-right: 4%;
-  margin: 0 2% 0px 2%;
   width: 300px;
   border: 2px solid #dfe1e6;
   border-radius: 24px;
-}
-
-.flex_child {
-  display: flex;
-  flex-direction: row;
 }
 
 .gray_text {

@@ -1,4 +1,5 @@
 import './style.css';
+import './common.css';
 
 const foodDishes = document.getElementById('foodDishes');
 const arrayOfDishes = [
@@ -42,7 +43,7 @@ const arrayOfDishes = [
 ];
 
 for (let x = 0; x < arrayOfDishes.length; x += 1) {
-  foodDishes.innerHTML += `<div class="card division flex-card">
+  foodDishes.innerHTML += `<div class="card division flex-card dflex-row">
       <div class="align_images">
         <img
           src="${arrayOfDishes[x].strMealThumb}"
@@ -54,7 +55,7 @@ for (let x = 0; x < arrayOfDishes.length; x += 1) {
       <div class="text_child">
           <h2>${arrayOfDishes[x].strMeal}</h2>
           
-        <div class="flex_child">
+        <div class="dflex-row">
           <span class="gray_text">• ${arrayOfDishes[x].strTags[0]} </span>
           <span class="gray_text">• ${arrayOfDishes[x].strTags[1]}</span>
         </div>

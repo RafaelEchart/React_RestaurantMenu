@@ -4,6 +4,9 @@
   --primary-color: #012138;
   --secondary-color: #f9f9f9;
   --gradient-color: #024d83;
+  --light-color: #fff;
+  --main-font: "Poppins", arial, helvetica, sans-serif;
+  --title-font: "Countryside", sans-serif;
 }
 
 html {
@@ -12,7 +15,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-family: var(--main-font);
   background:
     radial-gradient(
       ellipse farthest-corner at center top,
@@ -23,20 +26,13 @@ body {
 }
 
 .header {
-  /* display: flex; */
   align-items: center;
   justify-content: space-between;
   position: unset;
-
-  /* background-color: #fff; */
-
-  /* box-shadow: 1px 1px 4px 0 rgb(0 0 0 / 10%); */
   width: 100%;
   z-index: 3;
   height: 0;
   margin-bottom: 40px;
-
-  /* margin-bottom: 100px; */
 }
 
 .max-width-header {
@@ -61,7 +57,7 @@ body {
 
 a {
   color: #344563;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-family: var(--main-font);
   font-weight: 400;
 }
 
@@ -71,7 +67,7 @@ a {
 
 .topnav {
   width: fit-content;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-family: var(--main-font);
 }
 
 .topnav a {
@@ -87,7 +83,7 @@ a {
   box-shadow: none;
   flex: 1;
   padding: 0 1em;
-  color: #fff;
+  color: var(--light-color);
   background-color: #0365ac;
   background-image: none;
   cursor: pointer;
@@ -96,7 +92,6 @@ a {
 
 .select {
   position: relative;
-  display: flex;
   width: 20em;
   height: 3em;
   border-radius: 0.25em;
@@ -126,16 +121,13 @@ a {
   background-image: url("https://www.themealdb.com/images/category/chicken.png");
   background-repeat: no-repeat;
   background-position: center;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
   margin-bottom: 230px;
 }
 
 .banner h1 {
   font-size: 45px;
   color: #dbdbdb;
-  font-family: "Countryside", sans-serif;
+  font-family: var(--title-font);
   height: 30%;
   margin: 0;
 }
@@ -147,31 +139,20 @@ a {
 }
 
 .innerAligment {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   max-width: 550px;
   min-width: 250px;
-  margin: 30px;
+  margin: 30px 30px -70px 30px;
   text-align: center;
-  margin-bottom: -70px;
   height: 140px;
 }
 
 .cards {
   width: 100%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
   grid-gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 .flex-card {
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   max-width: 100%;
   transition-property: border-color, box-shadow;
@@ -189,17 +170,13 @@ a {
 
 .text_child h2 {
   font-weight: 700;
-  line-height: 25px;
   line-height: 35px;
-  margin: 0;
-  margin-top: 15px;
+  margin: 15px 0 0 0;
 }
 
 .text_child p {
   color: #344563;
   word-break: normal;
-
-  /* max-width: fit-content; */
   max-width: 430px;
 }
 
@@ -207,17 +184,10 @@ a {
   margin-left: 2%;
 }
 
-.flex_child {
-  display: flex;
-  flex-direction: row;
-}
-
 .card {
-  background-color: #fff;
+  background-color: var(--light-color);
   padding: 1rem;
-  margin: 0 2% 0 2%;
-  margin-left: 4%;
-  margin-right: 4%;
+  margin: 0 2% 2% 2%;
   width: 300px;
   border: 2px solid #dfe1e6;
   border-radius: 24px;
@@ -226,7 +196,6 @@ a {
 .gray_text {
   color: gray;
   margin-left: 13px;
-  margin-top: 2.9px;
   font-size: 0.8rem;
 }
 
@@ -234,7 +203,7 @@ a {
   border: 1px solid var(--primary-color);
   border-radius: 8px;
   box-sizing: border-box;
-  background: #fff;
+  background: var(--light-color);
   height: 48px;
   margin-top: 25px;
   margin-bottom: 19px;
@@ -245,22 +214,19 @@ a {
 
 .SeeCommentsButton:hover {
   background: var(--gradient-color);
-  color: #fff;
+  color: var(--light-color);
   transition: 0.2s 0.1s;
 }
 
 .SeeCommentsButton:active {
   background: var(--primary-color);
-  color: #fff;
+  color: var(--light-color);
   transition: 0s 0s;
 }
 
 .SeeCommentsButton span {
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   margin: 0 10px;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-family: var(--main-font);
   font-weight: 200;
   font-size: 17px;
   line-height: 24px;

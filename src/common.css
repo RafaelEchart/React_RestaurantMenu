@@ -1,0 +1,23 @@
+.dflex-row {
+  display: flex;
+}
+
+.dflex-flexend-center {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.dflex-column-alignCenter-justifyCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dflex-row-wrap-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}

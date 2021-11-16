@@ -6,7 +6,7 @@
     ]
   },
   "version": "1.0.0",
-  "description": "ToDoList Microverse RafaelEchart",
+  "description": "GitFood",
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RafaelEchart/ToDoList.git"
+    "url": "git+https://github.com/RafaelEchart/RestaurantMenu_Capstone.git"
   },
   "keywords": [],
   "author": "",
@@ -34,7 +34,7 @@
     "css-loader": "^6.5.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-import": "^2.25.3",
     "file-loader": "^6.2.0",
     "hint": "^6.1.9",
     "html-webpack-plugin": "^5.5.0",

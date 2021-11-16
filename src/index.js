@@ -3,6 +3,7 @@ import './styles/common.css';
 import fillCategories from './fillCategories';
 import renderFooter from './renderFooter';
 import getDishesFromCategory from './getDishesFromCategory';
+// import './popUpWindow.css';
 
 let categories;
 

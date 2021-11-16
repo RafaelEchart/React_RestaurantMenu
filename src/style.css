@@ -1,14 +1,5 @@
 @import url("http://fonts.cdnfonts.com/css/countryside");
 
-:root {
-  --primary-color: #012138;
-  --secondary-color: #f9f9f9;
-  --gradient-color: #024d83;
-  --light-color: #fff;
-  --main-font: "Poppins", arial, helvetica, sans-serif;
-  --title-font: "Countryside", sans-serif;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -148,6 +139,7 @@ a {
 
 .cards {
   width: 100%;
+  max-width: 1350px;
   margin: 0 auto;
   grid-gap: 1rem;
 }

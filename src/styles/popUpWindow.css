@@ -1,0 +1,59 @@
+.popup-window {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  pointer-events: all;
+  opacity: 0;
+  transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-window--visible {
+  opacity: 1;
+  transform: rotate3d(1, 0.5, 0.5, 0deg) scale(1);
+  transition: all ease-in 0.3s;
+}
+
+.popup-window--hidden {
+  opacity: 0;
+  transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);
+  transition: all ease-in 0.3s;
+}
+
+.popup-window__content {
+  position: relative;
+  background-color: var(--light-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  pointer-events: all;
+  overflow-y: scroll;
+}
+
+.popup-window__close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.popup-window .comments-form {
+  gap: 0.5rem;
+}
+
+.popup-window .popup-image {
+  width: 90%;
+  height: auto;
+  max-height: 50vh;
+  object-fit: cover;
+  clear: both;
+}

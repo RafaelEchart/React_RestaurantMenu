@@ -1,5 +1,22 @@
+import _ from 'lodash';
+import displayComments from './popUpWindow.js';
+
+const setEventListeners = (dishes) => {
+  const SeeCommentsButton = document.querySelectorAll('.SeeCommentsButton');
+
+  _.forEach(SeeCommentsButton, (button) => {
+    button.addEventListener('click', (e) => {
+      const dish = _.filter(dishes, (dish) => dish.idMeal === e.target.id);
+      displayComments(dish[0].idMeal);
+    });
+  });
+};
+
 const renderIntro = (categoryInfo) => {
-  const categoryText = `${(categoryInfo.strCategoryDescription).substring(0, 250)}...`;
+  const categoryText = `${categoryInfo.strCategoryDescription.substring(
+    0,
+    250,
+  )}...`;
   const introBannerImage = document.getElementById('introBanner');
   const introBannerH1 = document.getElementById('introBannerH1');
   const introBannerSpan = document.getElementById('introBannerSpan');
@@ -11,7 +28,9 @@ const renderIntro = (categoryInfo) => {
 
 const renderDishesInDOM = (dishes) => {
   const foodDishes = document.getElementById('foodDishes');
-  if (dishes.length > 6) { dishes.length = 6; }
+  if (dishes.length > 6) {
+    dishes.length = 6;
+  }
 
   let html = '';
   for (let x = 0; x < dishes.length; x += 1) {
@@ -28,7 +47,7 @@ const renderDishesInDOM = (dishes) => {
             <h2>${dishes[x].strMeal}</h2>
             
           
-            <button type="button" onclick="toggleModal(${x})" class="SeeCommentsButton" id=${dishes[x].idMeal}>
+            <button type="button" class="SeeCommentsButton" id=${dishes[x].idMeal}>
               <span>Comments </span>
             </button>
           </div>
@@ -50,11 +69,14 @@ const getDishesFromCategory = async (categories, id) => {
   const selectedID = id - 1;
   renderIntro(categories[selectedID]);
 
-  let dishes = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${categories[selectedID].strCategory}`);
+  let dishes = await fetch(
+    'https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood',
+  );
   dishes = await dishes.json();
   dishes = dishes.meals;
 
   renderDishesInDOM(dishes);
+  setEventListeners(dishes);
   loading.style.display = 'none';
 };
 

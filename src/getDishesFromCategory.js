@@ -1,5 +1,6 @@
 import _ from 'lodash';
 import displayComments from './popUpWindow.js';
+import getLikes from './involmentAPI';
 
 const setEventListeners = (dishes) => {
   const SeeCommentsButton = document.querySelectorAll('.SeeCommentsButton');
@@ -26,11 +27,19 @@ const renderIntro = (categoryInfo) => {
   introBannerSpan.innerHTML = categoryText;
 };
 
-const renderDishesInDOM = (dishes) => {
+const renderDishesInDOM = (dishes, likes) => {
   const foodDishes = document.getElementById('foodDishes');
   if (dishes.length > 6) {
     dishes.length = 6;
   }
+
+  likes.forEach((like) => {
+    dishes.forEach((dish) => {
+      if (dish.idMeal === like.item_id) {
+        dish.likes = like.likes;
+      }
+    });
+  });
 
   let html = '';
   for (let x = 0; x < dishes.length; x += 1) {
@@ -48,8 +57,11 @@ const renderDishesInDOM = (dishes) => {
             
           
             <button type="button" class="SeeCommentsButton" id=${dishes[x].idMeal}>
-              <span>Comments </span>
+          <div class="dflex-center-spaceBetween">
+            <button type="button" class="SeeCommentsButton" id=${dishes[x].idMeal}>
             </button>
+            <h3 class="like-text">${dishes[x].likes ? dishes[x].likes : '0'} Likes</h3>
+          </div>
           </div>
       </div>`;
   }
@@ -76,6 +88,9 @@ const getDishesFromCategory = async (categories, id) => {
   dishes = dishes.meals;
 
   renderDishesInDOM(dishes);
+  const updatedLikes = await getLikes(dishes);
+
+  renderDishesInDOM(dishes, updatedLikes);
   setEventListeners(dishes);
   loading.style.display = 'none';
 };

@@ -16,7 +16,6 @@ window.onload = async () => {
 
   categories = await categories.json();
   categories = categories.categories;
-  console.log(categories);
   renderFooter();
 
   fillCategories(categories);

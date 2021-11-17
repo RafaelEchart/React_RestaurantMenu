@@ -1,7 +1,23 @@
+import _ from 'lodash';
+import displayComments from './popUpWindow.js';
 import getLikes from './involmentAPI';
 
+const setEventListeners = (dishes) => {
+  const SeeCommentsButton = document.querySelectorAll('.SeeCommentsButton');
+
+  _.forEach(SeeCommentsButton, (button) => {
+    button.addEventListener('click', (e) => {
+      const dish = _.filter(dishes, (dish) => dish.idMeal === e.target.id);
+      displayComments(dish[0].idMeal);
+    });
+  });
+};
+
 const renderIntro = (categoryInfo) => {
-  const categoryText = `${(categoryInfo.strCategoryDescription).substring(0, 250)}...`;
+  const categoryText = `${categoryInfo.strCategoryDescription.substring(
+    0,
+    250,
+  )}...`;
   const introBannerImage = document.getElementById('introBanner');
   const introBannerH1 = document.getElementById('introBannerH1');
   const introBannerSpan = document.getElementById('introBannerSpan');
@@ -13,7 +29,10 @@ const renderIntro = (categoryInfo) => {
 
 const renderDishesInDOM = (dishes, likes) => {
   const foodDishes = document.getElementById('foodDishes');
-  if (dishes.length > 6) { dishes.length = 6; }
+  console.log(dishes);
+  if (dishes.length > 6) {
+    dishes.length = 6;
+  }
 
   likes.forEach((like) => {
     dishes.forEach((dish) => {
@@ -37,9 +56,11 @@ const renderDishesInDOM = (dishes, likes) => {
         <div class="text_child">
             <h2>${dishes[x].strMeal}</h2>
             
+          
+            
           <div class="dflex-center-spaceBetween">
-            <button type="button" onclick="toggleModal(${x})" class="SeeCommentsButton" id=${dishes[x].idMeal}>
-              <span>Comments </span>
+            <button type="button" class="SeeCommentsButton" id=${dishes[x].idMeal}>
+            <span>Comments</span>
             </button>
             <h3 class="like-text">${dishes[x].likes ? dishes[x].likes : '0'} Likes</h3>
           </div>
@@ -62,13 +83,17 @@ const getDishesFromCategory = async (categories, id) => {
   const selectedID = id - 1;
   renderIntro(categories[selectedID]);
 
-  let dishes = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${categories[selectedID].strCategory}`);
+  let dishes = await fetch(
+    `https://www.themealdb.com/api/json/v1/1/filter.php?c=${categories[selectedID].strCategory}`,
+  );
   dishes = await dishes.json();
   dishes = dishes.meals;
 
   const updatedLikes = await getLikes(dishes);
+  console.log('here', updatedLikes);
 
   renderDishesInDOM(dishes, updatedLikes);
+  setEventListeners(dishes);
   loading.style.display = 'none';
 };
 

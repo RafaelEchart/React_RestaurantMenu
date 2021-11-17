@@ -6,7 +6,7 @@ const popUpCommentWindow = document.getElementById('popup-comments-window');
 const displayComments = async (dishIdMeal) => {
   const mealComments = await fetchComments(dishIdMeal);
   let dish = await fetch(
-    `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${dishIdMeal}`
+    `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${dishIdMeal}`,
   );
   dish = await dish.json();
   [dish] = dish.meals;
@@ -52,7 +52,7 @@ const displayComments = async (dishIdMeal) => {
     <div class="comments-list__item">
     <p>No comments to display</p>
     </div>
-    `
+    `,
     );
     return;
   }
@@ -63,7 +63,7 @@ const displayComments = async (dishIdMeal) => {
     <div class="comments-list__item">
     <p>${comment.creation_date} ${comment.username}: ${comment.comment}</p>
     </div>
-    `
+    `,
     );
   });
 };

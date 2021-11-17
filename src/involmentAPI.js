@@ -14,7 +14,7 @@ export const getLikes = async () => {
 export const fetchComments = async (mealId) => {
   try {
     let comments = await fetch(
-      `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${UniqueId}/comments?item_id=${mealId}`
+      `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${UniqueId}/comments?item_id=${mealId}`,
     );
     comments = await comments.json();
     return comments;
@@ -52,4 +52,3 @@ export const postLikes = async (id) => {
   }
   return null;
 };
-

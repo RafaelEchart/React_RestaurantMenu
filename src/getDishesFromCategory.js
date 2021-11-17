@@ -29,6 +29,7 @@ const renderIntro = (categoryInfo) => {
 
 const renderDishesInDOM = (dishes, likes) => {
   const foodDishes = document.getElementById('foodDishes');
+  console.log(dishes);
   if (dishes.length > 6) {
     dishes.length = 6;
   }
@@ -56,9 +57,10 @@ const renderDishesInDOM = (dishes, likes) => {
             <h2>${dishes[x].strMeal}</h2>
             
           
-            <button type="button" class="SeeCommentsButton" id=${dishes[x].idMeal}>
+            
           <div class="dflex-center-spaceBetween">
             <button type="button" class="SeeCommentsButton" id=${dishes[x].idMeal}>
+            <span>Comments</span>
             </button>
             <h3 class="like-text">${dishes[x].likes ? dishes[x].likes : '0'} Likes</h3>
           </div>
@@ -82,13 +84,13 @@ const getDishesFromCategory = async (categories, id) => {
   renderIntro(categories[selectedID]);
 
   let dishes = await fetch(
-    'https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood',
+    `https://www.themealdb.com/api/json/v1/1/filter.php?c=${categories[selectedID].strCategory}`,
   );
   dishes = await dishes.json();
   dishes = dishes.meals;
 
-  renderDishesInDOM(dishes);
   const updatedLikes = await getLikes(dishes);
+  console.log('here', updatedLikes);
 
   renderDishesInDOM(dishes, updatedLikes);
   setEventListeners(dishes);

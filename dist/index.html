@@ -9,10 +9,17 @@
     <title>Restaurant Capstone</title>
   <script defer src="index.bundle.js"></script></head>
   <body>
-
+    
     <!-- This is the top menu -->
     <!-- <a></a> logo left -->
     <!-- select right -->
+    
+    <div>
+      
+      <div id="loading" class="loading">
+        <div class="loader">Loading...</div>
+      </div>
+    
     
     <header class="header">
       <div class="max-width-header">
@@ -22,10 +29,8 @@
 
         
           <div class="dflex-row select">
-            <select class="select-tag">
-              <option value="1">Beef (6 options)</option>
-              <option value="2">Sea Food</option>
-              <option value="3">Chicken</option>
+            <select class="select-tag" id="categorySelector" >
+              
             </select>
           </div>
         
@@ -34,20 +39,20 @@
 
     <!-- Image for category banner  -->
 
-    <section class="banner dflex-flexend-center">
+    <section class="banner dflex-flexend-center" id="introBanner">
       <div class="innerAligment dflex-column-alignCenter-justifyCenter">
         
-        <h1>Beef</h1>
-        <span>Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times.[1] Beef is a source of high-quality protein and essential nutrients.</span>
+        <h1 id="introBannerH1"></h1>
+        <span id="introBannerSpan"></span>
       </div>
     </section>
 
     <section>
       <div class="cards dflex-row-wrap-center" id="foodDishes">
-        <!-- Portfolio loaded dynamically -->
+        <!-- list loaded dynamically -->
       </div>
     </section>
     
-    
+  </div>
   </body>
 </html>

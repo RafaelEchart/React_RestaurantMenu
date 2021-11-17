@@ -109,7 +109,7 @@ a {
 .banner {
   width: 100%;
   height: 65vh;
-  background-image: url("./assets/loading-image.png");
+  background-image: url("../assets/loading-image.png");
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 230px;

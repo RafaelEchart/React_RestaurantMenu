@@ -1,5 +1,5 @@
-import './style.css';
-import './common.css';
+import './styles/style.css';
+import './styles/common.css';
 import fillCategories from './fillCategories';
 import renderFooter from './renderFooter';
 import getDishesFromCategory from './getDishesFromCategory';

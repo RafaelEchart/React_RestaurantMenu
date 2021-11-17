@@ -38,7 +38,7 @@ const renderDishesInDOM = (dishes) => {
   foodDishes.insertAdjacentHTML('beforeend', html);
 };
 
-const renderDishesFromCategory = async (categories, id) => {
+const getDishesFromCategory = async (categories, id) => {
   const foodDishes = document.getElementById('foodDishes');
 
   foodDishes.innerHTML = '';
@@ -58,4 +58,4 @@ const renderDishesFromCategory = async (categories, id) => {
   loading.style.display = 'none';
 };
 
-export default renderDishesFromCategory;
+export default getDishesFromCategory;

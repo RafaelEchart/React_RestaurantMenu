@@ -1,14 +1,16 @@
-import _ from 'lodash';
 import displayComments from './popUpWindow.js';
-import getLikes from './involmentAPI';
+import { getLikes, postLikes } from './involmentAPI';
 
 const setEventListeners = (dishes) => {
-  const SeeCommentsButton = document.querySelectorAll('.SeeCommentsButton');
+  dishes.forEach((dish) => {
+    const likeButton = document.getElementById(`like-${dish.idMeal}`);
+    likeButton.addEventListener('click', () => {
+      postLikes(dish.idMeal);
+    });
 
-  _.forEach(SeeCommentsButton, (button) => {
-    button.addEventListener('click', (e) => {
-      const dish = _.filter(dishes, (dish) => dish.idMeal === e.target.id);
-      displayComments(dish[0].idMeal);
+    const commentButton = document.getElementById(dish.idMeal);
+    commentButton.addEventListener('click', () => {
+      displayComments(dish.idMeal);
     });
   });
 };
@@ -62,7 +64,12 @@ const renderDishesInDOM = (dishes, likes) => {
             <button type="button" class="SeeCommentsButton" id=${dishes[x].idMeal}>
             <span>Comments</span>
             </button>
-            <h3 class="like-text">${dishes[x].likes ? dishes[x].likes : '0'} Likes</h3>
+            <svg class="ico" id='like-${dishes[x].idMeal}' width="24" height="24" viewBox="0 0 24 24">
+            
+  <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+  
+  </svg>
+            <h3 class="like-text" id='likeCounter-${dishes[x].idMeal}'>${dishes[x].likes ? dishes[x].likes : '0'} Like${dishes[x].likes > 1 ? 's' : ''}</h3>
           </div>
           </div>
       </div>`;

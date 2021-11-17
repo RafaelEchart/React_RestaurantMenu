@@ -312,3 +312,17 @@ a {
 .like-text {
   font-weight: 100;
 }
+
+.ico {
+  border-radius: 50%;
+  cursor: pointer;
+  fill: #232323;
+  transition: 0.4s;
+}
+
+.liked {
+  transform: scale(1) rotate(360deg);
+  background-color: #c62828;
+  padding: 0.8rem;
+  fill: white;
+}

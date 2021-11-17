@@ -17,6 +17,13 @@
   justify-content: center;
 }
 
+.dflex-center-spaceBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .dflex-column-alignCenter-justifyCenter {
   display: flex;
   justify-content: center;

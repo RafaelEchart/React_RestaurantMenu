@@ -1,3 +1,5 @@
+import getLikes from './involmentAPI';
+
 const renderIntro = (categoryInfo) => {
   const categoryText = `${(categoryInfo.strCategoryDescription).substring(0, 250)}...`;
   const introBannerImage = document.getElementById('introBanner');
@@ -9,9 +11,17 @@ const renderIntro = (categoryInfo) => {
   introBannerSpan.innerHTML = categoryText;
 };
 
-const renderDishesInDOM = (dishes) => {
+const renderDishesInDOM = (dishes, likes) => {
   const foodDishes = document.getElementById('foodDishes');
   if (dishes.length > 6) { dishes.length = 6; }
+
+  likes.forEach((like) => {
+    dishes.forEach((dish) => {
+      if (dish.idMeal === like.item_id) {
+        dish.likes = like.likes;
+      }
+    });
+  });
 
   let html = '';
   for (let x = 0; x < dishes.length; x += 1) {
@@ -27,10 +37,12 @@ const renderDishesInDOM = (dishes) => {
         <div class="text_child">
             <h2>${dishes[x].strMeal}</h2>
             
-          
+          <div class="dflex-center-spaceBetween">
             <button type="button" onclick="toggleModal(${x})" class="SeeCommentsButton" id=${dishes[x].idMeal}>
               <span>Comments </span>
             </button>
+            <h3 class="like-text">${dishes[x].likes ? dishes[x].likes : '0'} Likes</h3>
+          </div>
           </div>
       </div>`;
   }
@@ -54,7 +66,9 @@ const getDishesFromCategory = async (categories, id) => {
   dishes = await dishes.json();
   dishes = dishes.meals;
 
-  renderDishesInDOM(dishes);
+  const updatedLikes = await getLikes(dishes);
+
+  renderDishesInDOM(dishes, updatedLikes);
   loading.style.display = 'none';
 };
 

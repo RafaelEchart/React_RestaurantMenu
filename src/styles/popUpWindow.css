@@ -1,5 +1,6 @@
 .popup-window {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: fixed;
   top: 0;
   left: 0;
@@ -8,32 +9,48 @@
   z-index: 9999;
   pointer-events: all;
   opacity: 0;
-  transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);
+  -webkit-transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);
+          transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .popup-window--visible {
   opacity: 1;
-  transform: rotate3d(1, 0.5, 0.5, 0deg) scale(1);
+  -webkit-transform: rotate3d(1, 0.5, 0.5, 0deg) scale(1);
+          transform: rotate3d(1, 0.5, 0.5, 0deg) scale(1);
+  -webkit-transition: all ease-in 0.3s;
   transition: all ease-in 0.3s;
 }
 
 .popup-window--hidden {
   opacity: 0;
-  transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);
+  -webkit-transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);
+          transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);
+  -webkit-transition: all ease-in 0.3s;
   transition: all ease-in 0.3s;
 }
 
 .popup-window__content {
   position: relative;
   width: 90%;
+  height: 90%;
   background-color: var(--light-color);
   border-radius: 0.5rem;
   padding: 1rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
   pointer-events: all;
   overflow-y: scroll;
 }
@@ -55,6 +72,8 @@
   width: 90%;
   height: auto;
   max-height: 50vh;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   clear: both;
 }
+/*# sourceMappingURL=popUpWindow.css.map */

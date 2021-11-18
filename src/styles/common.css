@@ -32,6 +32,13 @@
   flex-direction: column;
 }
 
+.dflex-column-alignCenter-justifyFlexStart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
 .dflex-row-wrap-center {
   display: flex;
   flex-direction: row;

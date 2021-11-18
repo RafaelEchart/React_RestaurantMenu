@@ -1,9 +1,10 @@
 import './styles/style.css';
 import './styles/common.css';
 import './styles/popUpWindow.css';
-import fillCategories from './fillCategories';
 import renderFooter from './renderFooter';
 import getDishesFromCategory from './getDishesFromCategory';
+
+const categorySelector = document.getElementById('categorySelector');
 
 let categories;
 
@@ -18,7 +19,10 @@ window.onload = async () => {
   categories = categories.categories;
   renderFooter();
 
-  fillCategories(categories);
+  categorySelector.addEventListener('change', (event) => {
+    getDishesFromCategory(categories, event.target.value);
+  });
+
   getDishesFromCategory(categories, '1');
 
   loading.style.display = 'none';

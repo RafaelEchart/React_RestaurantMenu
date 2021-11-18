@@ -1,5 +1,6 @@
 import displayComments from './popUpWindow.js';
 import { getLikes, postLikes } from './involmentAPI';
+import resetCategoriesAndCountDishes from './resetCategoriesAndCountDishes.js';
 
 const setEventListeners = (dishes) => {
   dishes.forEach((dish) => {
@@ -32,9 +33,6 @@ const renderIntro = (categoryInfo) => {
 const renderDishesInDOM = (dishes, likes) => {
   const foodDishes = document.getElementById('foodDishes');
   console.log(dishes);
-  if (dishes.length > 6) {
-    dishes.length = 6;
-  }
 
   likes.forEach((like) => {
     dishes.forEach((dish) => {
@@ -96,9 +94,12 @@ const getDishesFromCategory = async (categories, id) => {
   dishes = await dishes.json();
   dishes = dishes.meals;
 
-  const updatedLikes = await getLikes(dishes);
-  console.log('here', updatedLikes);
+  if (dishes.length > 6) {
+    dishes.length = 6;
+  }
 
+  resetCategoriesAndCountDishes(dishes, categories, id);
+  const updatedLikes = await getLikes(dishes);
   renderDishesInDOM(dishes, updatedLikes);
   setEventListeners(dishes);
   loading.style.display = 'none';

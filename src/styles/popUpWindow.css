@@ -29,6 +29,7 @@
 
 .popup-window__content {
   position: relative;
+  width: 90%;
   background-color: var(--light-color);
   border-radius: 0.5rem;
   padding: 1rem;

@@ -1,12 +1,26 @@
+const UniqueId = 'xFhLPbE0OxSNE2QeBp9w';
+
 export const getLikes = async () => {
   try {
-    let likesOfDishes = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/xFhLPbE0OxSNE2QeBp9w/likes/');
+    let likesOfDishes = await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${UniqueId}/likes/`);
     likesOfDishes = await likesOfDishes.json();
     return likesOfDishes;
   } catch (err) {
     console.log(err);
   }
   return null;
+};
+
+export const fetchComments = async (mealId) => {
+  try {
+    let comments = await fetch(
+      `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${UniqueId}/comments?item_id=${mealId}`,
+    );
+    comments = await comments.json();
+    return comments;
+  } catch (error) {
+    return false;
+  }
 };
 
 export const postLikes = async (id) => {
@@ -16,7 +30,7 @@ export const postLikes = async (id) => {
   } else {
     try {
       likeButton.classList.add('liked');
-      await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/xFhLPbE0OxSNE2QeBp9w/likes/', {
+      await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${UniqueId}/likes/`, {
         method: 'POST',
         mode: 'cors',
         headers: {

@@ -1,11 +1,13 @@
-const categorySelector = document.getElementById('categorySelector');
-
-const calculateItems = (dishes) => {
-  const itemsLength = dishes.length;
-  return itemsLength;
+export const calculateItems = (dishes) => {
+  let counter = 0;
+  for (let x = 0; x < dishes.length; x += 1) {
+    counter += 1;
+  }
+  return counter;
 };
 
-const resetCategoriesAndCountDishes = (dishes, categories, id) => {
+export const resetCategoriesAndCountDishes = (dishes, categories, id) => {
+  const categorySelector = document.getElementById('categorySelector');
   categorySelector.innerHTML = '';
 
   const selectedCategory = categories[id - 1].strCategory;
@@ -19,5 +21,3 @@ const resetCategoriesAndCountDishes = (dishes, categories, id) => {
     categorySelector.insertAdjacentHTML('beforeend', optionCategory);
   });
 };
-
-export default resetCategoriesAndCountDishes;

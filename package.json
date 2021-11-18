@@ -1,15 +1,10 @@
 {
   "name": "restaurant_capstone",
-  "jest": {
-    "setupFiles": [
-      "./src/tests/globalHTMLmock.js"
-    ]
-  },
   "version": "1.0.0",
   "description": "GitFood",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage",
+    "test": "jest",
     "build": "webpack",
     "start": "webpack-dev-server --open",
     "watch": "webpack --watch"

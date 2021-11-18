@@ -1,9 +1,36 @@
 import _ from 'lodash';
-import { fetchComments } from './involmentAPI.js';
+import { addComment, fetchComments } from './involmentAPI.js';
 
 const popUpCommentWindow = document.getElementById('popup-comments-window');
 
-const displayComments = async (dishIdMeal) => {
+const displayComments = (mealComments) => {
+  const commentsContainer = document.querySelector('.comments-list');
+
+  if (mealComments.error !== undefined) {
+    commentsContainer.insertAdjacentHTML(
+      'beforeend',
+      `
+    <div class="comments-list__item no-comments">
+    <p>No comments to display</p>
+    </div>
+    `,
+    );
+    return;
+  }
+  commentsContainer.innerHTML = '';
+  _.forEach(mealComments, (comment) => {
+    commentsContainer.insertAdjacentHTML(
+      'beforeend',
+      `
+    <div class="comments-list__item">
+    <p>${comment.creation_date} ${comment.username}: ${comment.comment}</p>
+    </div>
+    `,
+    );
+  });
+};
+
+const displayPopUpCommentWindow = async (dishIdMeal) => {
   const mealComments = await fetchComments(dishIdMeal);
   let dish = await fetch(
     `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${dishIdMeal}`,
@@ -29,7 +56,6 @@ const displayComments = async (dishIdMeal) => {
   </section>
   <h3>Add a comment</h3>
   <form class="comments-form dflex-column-alignCenter-justifyCenter">
-    <input type="text" name="dish-id" value="${dish.idMeal}" hidden>
     <label for="comment-name" hidden>Name</label>
     <input type="text" id="comment-name" placeholder="Your name" required>
     <label for="comment-text" hidden>Comment</label>
@@ -38,34 +64,27 @@ const displayComments = async (dishIdMeal) => {
   `;
 
   const closePopUpWindow = document.getElementById('popup-window__close');
-  const commentsContainer = document.querySelector('.comments-list');
+  const commentsForm = document.querySelector('.comments-form');
 
   closePopUpWindow.addEventListener('click', () => {
     popUpCommentWindow.parentElement.classList.add('popup-window--hidden');
     popUpCommentWindow.parentElement.classList.remove('popup-window--visible');
   });
+  commentsForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const comment = {
+      username: event.target.querySelector('#comment-name').value,
+      comment: event.target.querySelector('#comment-text').value,
+      item_id: dishIdMeal,
+    };
 
-  if (mealComments.error !== undefined) {
-    commentsContainer.insertAdjacentHTML(
-      'beforeend',
-      `
-    <div class="comments-list__item">
-    <p>No comments to display</p>
-    </div>
-    `,
-    );
-    return;
-  }
-  _.forEach(mealComments, (comment) => {
-    commentsContainer.insertAdjacentHTML(
-      'beforeend',
-      `
-    <div class="comments-list__item">
-    <p>${comment.creation_date} ${comment.username}: ${comment.comment}</p>
-    </div>
-    `,
-    );
+    const response = await addComment(comment);
+    if (response.status === 201) {
+      const mealComments = await fetchComments(dishIdMeal);
+      displayComments(mealComments);
+    }
   });
+  displayComments(mealComments);
 };
 
-export default displayComments;
+export default displayPopUpCommentWindow;

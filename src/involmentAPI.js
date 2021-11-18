@@ -2,13 +2,30 @@ const UniqueId = 'xFhLPbE0OxSNE2QeBp9w';
 
 export const getLikes = async () => {
   try {
-    let likesOfDishes = await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${UniqueId}/likes/`);
+    let likesOfDishes = await fetch(
+      `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${UniqueId}/likes/`,
+    );
     likesOfDishes = await likesOfDishes.json();
     return likesOfDishes;
   } catch (err) {
     console.log(err);
   }
   return null;
+};
+
+export const addComment = async (comment) => {
+  const response = await fetch(
+    'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/xFhLPbE0OxSNE2QeBp9w/comments',
+    {
+      method: 'POST',
+      body: JSON.stringify(comment),
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+    },
+  );
+  return response;
 };
 
 export const fetchComments = async (mealId) => {
@@ -19,7 +36,7 @@ export const fetchComments = async (mealId) => {
     comments = await comments.json();
     return comments;
   } catch (error) {
-    return false;
+    return null;
   }
 };
 
@@ -30,16 +47,19 @@ export const postLikes = async (id) => {
   } else {
     try {
       likeButton.classList.add('liked');
-      await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${UniqueId}/likes/`, {
-        method: 'POST',
-        mode: 'cors',
-        headers: {
-          'Content-Type': 'application/json',
+      await fetch(
+        `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${UniqueId}/likes/`,
+        {
+          method: 'POST',
+          mode: 'cors',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            item_id: id,
+          }),
         },
-        body: JSON.stringify({
-          item_id: id,
-        }),
-      });
+      );
     } catch (err) {
       console.log(err);
     }
@@ -47,7 +67,9 @@ export const postLikes = async (id) => {
     const likeCounter = document.getElementById(`likeCounter-${id}`);
     const newNumberOfLikes = Number(likeCounter.innerHTML.split(' ')[0]) + 1;
 
-    likeCounter.innerHTML = `${newNumberOfLikes} Like${newNumberOfLikes > 1 ? 's' : ''}`;
+    likeCounter.innerHTML = `${newNumberOfLikes} Like${
+      newNumberOfLikes > 1 ? 's' : ''
+    }`;
     return newNumberOfLikes;
   }
   return null;

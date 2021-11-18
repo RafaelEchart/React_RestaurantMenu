@@ -1,6 +1,6 @@
 import displayPopUpCommentWindow from './popUpWindow.js';
 import { getLikes, postLikes } from './involmentAPI';
-import resetCategoriesAndCountDishes from './resetCategoriesAndCountDishes.js';
+import { resetCategoriesAndCountDishes } from './resetCategoriesAndCountDishes.js';
 
 const setEventListeners = (dishes) => {
   dishes.forEach((dish) => {

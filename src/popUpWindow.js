@@ -2,6 +2,7 @@ import _ from 'lodash';
 import { addComment, fetchComments } from './involmentAPI.js';
 
 const popUpCommentWindow = document.getElementById('popup-comments-window');
+let commentsContainer;
 
 export const commentsCount = (mealComments) => {
   let commentCounter = 0;
@@ -15,7 +16,7 @@ export const commentsCount = (mealComments) => {
 };
 
 const displayComments = (mealComments) => {
-  const commentsContainer = document.querySelector('.comments-list');
+  commentsContainer = document.querySelector('.comments-list');
   const numberOfComments = commentsCount(mealComments);
   const commentsHeader = document.querySelector('.comments-header');
 
@@ -38,9 +39,21 @@ const displayComments = (mealComments) => {
     commentsContainer.insertAdjacentHTML(
       'beforeend',
       `
-    <div class="comments-list__item">
-    <p>${comment.creation_date} ${comment.username}: ${comment.comment}</p>
-    </div>
+    <li class="comments-list__item">
+    <header class="comments-list__item-header">
+      <div class="comments-list__item-header__info dflex-row dflex-alignCenter">
+        <span class="comments-list__item-header__info__name dflex-alignCenter">
+        ${comment.username}
+        </span>
+        <span class="comments-list__item-header__info__date dflex-alignCenter">
+        ${comment.creation_date}
+        </span>
+      </div>
+      <article class="comments-list__item-text">
+        ${comment.comment}
+      </article>
+    <header>
+    </li>
     `,
     );
   });
@@ -66,9 +79,9 @@ const displayPopUpCommentWindow = async (dishIdMeal) => {
       <button class="SeeCommentsButton">Video</button>
       <button class="SeeCommentsButton">Recipe</button>
   </nav>
-  <section class="meals-comments"> 
+  <section class="meals-comments dflex-column-alignCenter-justifyCenter"> 
     <h3 class="comments-header"></h3>
-    <div class="comments-list"></div>
+    <ul class="comments-list dflex-column-alignCenter-justifyFlexStart"></ul>
   </section>
   <h3>Add a comment</h3>
   <form class="comments-form dflex-column-alignCenter-justifyCenter">
@@ -76,7 +89,7 @@ const displayPopUpCommentWindow = async (dishIdMeal) => {
     <input type="text" id="comment-name" placeholder="Your name" required>
     <label for="comment-text" hidden>Comment</label>
     <textarea id="comment-text" placeholder="Your comment" required></textarea>
-    <button type="submit" class="comments-form__submit">Comment</button>
+    <button type="submit" class="comments-form__submit SeeCommentsButton">Comment</button>
   `;
 
   const closePopUpWindow = document.getElementById('popup-window__close');
@@ -98,6 +111,7 @@ const displayPopUpCommentWindow = async (dishIdMeal) => {
     if (response.status === 201) {
       const mealComments = await fetchComments(dishIdMeal);
       displayComments(mealComments);
+      commentsContainer.scrollTop = commentsContainer.scrollHeight;
     }
   });
   displayComments(mealComments);

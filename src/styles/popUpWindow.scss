@@ -4,6 +4,7 @@ $light-color: var(--light-color);
 $primary-font: var(--main-font);
 $title-font: var(--title-font);
 $flip-popup-duration: 0.3s;
+$comments-max-width: 500px;
 
 .popup-window {
   box-sizing: border-box;
@@ -20,6 +21,10 @@ $flip-popup-duration: 0.3s;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  h3 {
+    font-size: 1.25rem;
+  }
 
   &--visible {
     opacity: 1;
@@ -56,6 +61,45 @@ $flip-popup-duration: 0.3s;
 
   .comments-form {
     gap: 0.5rem;
+    width: 100%;
+    max-width: $comments-max-width;
+
+    & > * {
+      width: 90%;
+    }
+
+    input,
+    textarea {
+      border: 1px solid gray;
+      border-radius: 0.5rem;
+      padding: 0.5rem;
+      font-family: $primary-font;
+      transition: all ease-in 0.3s;
+
+      &:focus-visible {
+        background-color: $secondary-color;
+        transform: scale(1.05);
+        outline: 1px solid $primary-color;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    #comment-name {
+      height: 25px;
+    }
+
+    #comment-text {
+      height: 50px;
+    }
+
+    &__submit {
+      width: unset;
+      align-self: center !important;
+      margin: 0.5rem 0;
+    }
   }
 
   .popup-image {
@@ -64,5 +108,53 @@ $flip-popup-duration: 0.3s;
     max-height: 50vh;
     object-fit: cover;
     clear: both;
+  }
+}
+
+.meals-comments {
+  width: 100%;
+  max-width: $comments-max-width;
+
+  .comments-list {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 400px;
+    overflow-y: scroll;
+
+    &__item {
+      margin-bottom: 1rem;
+      padding: 0.5rem 0.5rem 0.5rem 1rem;
+      border-radius: 0.5rem;
+      background-color: gray;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+      pointer-events: all;
+      color: $light-color;
+      width: 90%;
+
+      &-header {
+        margin-bottom: 0.5rem;
+        align-items: center;
+
+        &__info__name {
+          font-size: 1.5rem;
+          font-weight: bold;
+          display: inline-flex;
+
+          &::after {
+            content: '-';
+            margin: 0 0.5rem;
+            font-size: 1rem;
+          }
+        }
+
+        &__info__date {
+          font-size: 1rem;
+          text-align: center;
+          display: inline-flex;
+        }
+      }
+    }
   }
 }

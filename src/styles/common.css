@@ -12,6 +12,10 @@
   display: flex;
 }
 
+.dflex-alignCenter {
+  align-items: center;
+}
+
 .dflex-flexend-center {
   display: flex;
   align-items: flex-end;

@@ -3,8 +3,21 @@ import { addComment, fetchComments } from './involmentAPI.js';
 
 const popUpCommentWindow = document.getElementById('popup-comments-window');
 
+export const commentsCount = (mealComments) => {
+  let commentCounter = 0;
+  let commentIndex = 0;
+
+  while (mealComments[commentIndex] !== undefined) {
+    commentCounter += 1;
+    commentIndex += 1;
+  }
+  return commentCounter;
+};
+
 const displayComments = (mealComments) => {
   const commentsContainer = document.querySelector('.comments-list');
+  const numberOfComments = commentsCount(mealComments);
+  const commentsHeader = document.querySelector('.comments-header');
 
   if (mealComments.error !== undefined) {
     commentsContainer.insertAdjacentHTML(
@@ -17,6 +30,9 @@ const displayComments = (mealComments) => {
     );
     return;
   }
+  commentsHeader.innerHTML = `${
+    numberOfComments > 1 ? 'Comments' : 'Comment'
+  } (${numberOfComments})`;
   commentsContainer.innerHTML = '';
   _.forEach(mealComments, (comment) => {
     commentsContainer.insertAdjacentHTML(
@@ -51,7 +67,7 @@ const displayPopUpCommentWindow = async (dishIdMeal) => {
       <button class="SeeCommentsButton">Recipe</button>
   </nav>
   <section class="meals-comments"> 
-    <h3>Comments</h3>
+    <h3 class="comments-header"></h3>
     <div class="comments-list"></div>
   </section>
   <h3>Add a comment</h3>
@@ -85,6 +101,7 @@ const displayPopUpCommentWindow = async (dishIdMeal) => {
     }
   });
   displayComments(mealComments);
+  commentsCount(mealComments);
 };
 
 export default displayPopUpCommentWindow;

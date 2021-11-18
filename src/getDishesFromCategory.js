@@ -98,8 +98,8 @@ const getDishesFromCategory = async (categories, id) => {
     dishes.length = 6;
   }
 
-  const updatedLikes = await getLikes(dishes);
   resetCategoriesAndCountDishes(dishes, categories, id);
+  const updatedLikes = await getLikes(dishes);
   renderDishesInDOM(dishes, updatedLikes);
   setEventListeners(dishes);
   loading.style.display = 'none';

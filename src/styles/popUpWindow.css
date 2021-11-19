@@ -105,8 +105,7 @@
   background-color: var(--secondary-color);
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
-  border: 2px solid var(--primary-color);
-  outline: none;
+  outline: 1px solid var(--primary-color);
 }
 
 .popup-window .comments-form input:hover,
@@ -152,7 +151,7 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  height: 400px;
+  height: 100%;
   max-height: 400px;
   overflow-y: scroll;
 }

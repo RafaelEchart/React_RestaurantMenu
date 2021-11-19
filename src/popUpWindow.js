@@ -21,7 +21,6 @@ const displayComments = (mealComments) => {
   commentsContainer = document.querySelector('.comments-list');
   const numberOfComments = commentsCount(mealComments);
   const commentsHeader = document.querySelector('.comments-header');
-  const commentBox = document.getElementById('commentBox');
 
   if (mealComments.error !== undefined) {
     commentsContainer.insertAdjacentHTML(
@@ -32,10 +31,9 @@ const displayComments = (mealComments) => {
     </div>
     `,
     );
-    commentBox.style.height = '100%';
+
     return;
   }
-  commentBox.style.height = '400px';
 
   commentsHeader.innerHTML = `${
     numberOfComments > 1 ? 'Comments' : 'Comment'

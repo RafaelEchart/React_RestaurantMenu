@@ -69,7 +69,7 @@ $comments-max-width: 500px;
 
   .comments-form {
     gap: 0.5rem;
-    width: 100%;
+    width: 70%;
     max-width: $comments-max-width;
 
     & > * {
@@ -106,8 +106,8 @@ $comments-max-width: 500px;
     &__submit {
       width: 100px !important;
       font-size: 16px;
-      align-self: center !important;
-      margin: 0.5rem 0;
+      align-self:flex-start;
+      margin: 0.5rem 8px;
     }
   }
 

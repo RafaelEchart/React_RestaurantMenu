@@ -62,25 +62,26 @@ const displayComments = (mealComments) => {
 };
 
 const displayPopUpCommentWindow = async (dishIdMeal) => {
+  const loadingPopupCard = document.getElementById(`card-${dishIdMeal}`);
+  loadingPopupCard.insertAdjacentHTML('afterbegin', `<div id="loading-${dishIdMeal}" class="loading-popup">
+  <div class="loader">Loading...</div>
+</div>`);
+  const loading = document.getElementById(`loading-${dishIdMeal}`);
+  loading.style.display = 'flex';
+
   const mealComments = await fetchComments(dishIdMeal);
   let dish = await fetch(
     `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${dishIdMeal}`,
   );
   dish = await dish.json();
   [dish] = dish.meals;
-  console.log(dish);
 
   let ingredient = '';
   for (let x = 1; x <= 20; x += 1) {
     if (dish[`strIngredient${x}`] === null || dish[`strIngredient${x}`] === '') break;
     ingredient += `<span><strong>${dish[`strIngredient${x}`]}:</strong>  ${dish[`strMeasure${x}`]}</span>`;
-    // ingredient.push({
-    //   ingredient: dish[`strIngredient${x}`],
-    //   quantity: dish[`strMeasure${x}`],
-    // });
   }
 
-  console.log(ingredient);
   popUpCommentWindow.parentElement.classList.remove('popup-window--hidden');
   popUpCommentWindow.parentElement.classList.add('popup-window--visible');
   popUpCommentWindow.innerHTML = `
@@ -166,6 +167,8 @@ const displayPopUpCommentWindow = async (dishIdMeal) => {
   });
   displayComments(mealComments);
   commentsCount(mealComments);
+  loading.style.display = 'none';
+  loading.remove();
 };
 
 export default displayPopUpCommentWindow;

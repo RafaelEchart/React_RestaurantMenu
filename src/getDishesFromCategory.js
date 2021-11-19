@@ -56,12 +56,15 @@ const renderDishesInDOM = (dishes, likes) => {
     });
   });
 
-  console.log(dishes)
+  console.log(dishes);
 
   let html = '';
   for (let x = 0; x < dishes.length; x += 1) {
-    html += `<div class="card division flex-card dflex-row">
-        <div class="align_images">
+    html += `<div class="card division flex-card dflex-row" >
+
+  
+
+        <div class="align_images" id="card-${dishes[x].idMeal}">
           <img
             src="${dishes[x].strMealThumb}"
             width="554"

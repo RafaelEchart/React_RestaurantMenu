@@ -129,7 +129,6 @@ $comments-max-width: 500px;
       border-radius: 0.5rem;
       background-color: gray;
       box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
-      
       pointer-events: all;
       color: $light-color;
       width: 90%;
@@ -261,6 +260,7 @@ $comments-max-width: 500px;
     opacity: 0.2;
     transform: translateY(7%);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0%);
@@ -272,6 +272,7 @@ $comments-max-width: 500px;
     opacity: 0.2;
     transform: translateY(-3%);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0%);
@@ -279,9 +280,9 @@ $comments-max-width: 500px;
 }
 
 .display_align {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .iframe {

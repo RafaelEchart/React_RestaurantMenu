@@ -153,6 +153,7 @@ a {
 
 .align_images {
   margin: auto;
+  width: 300px;
 }
 
 .imagen_proyectos {
@@ -252,7 +253,7 @@ a {
 
 .loading {
   position: absolute;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -260,6 +261,19 @@ a {
   opacity: 1;
   background: rgba(0, 0, 0, 0.5);
   z-index: 99;
+}
+
+.loading-popup {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  border-radius: 8px;
 }
 
 .loader,

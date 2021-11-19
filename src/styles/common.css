@@ -1,0 +1,64 @@
+:root {
+  --primary-color: #012138;
+  --secondary-color: #f9f9f9;
+  --gradient-color: #024d83;
+  --light-color: #fff;
+  --main-font: "Poppins", arial, helvetica, sans-serif;
+  --title-font: "Countryside", sans-serif;
+  --layout-max-width: 1350px;
+}
+
+.dflex-row {
+  display: flex;
+}
+
+.dflex-alignCenter {
+  align-items: center;
+}
+
+.dflex-flexend-center {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.dflex-center-spaceBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dflex-column-alignCenter-justifyCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dflex-column-alignLeft-justifyCenter {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.dflex-column-alignCenter-justifyFlexStart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dflex-row-wrap-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dflex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

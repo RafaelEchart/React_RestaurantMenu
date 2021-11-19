@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <title>Restaurant Capstone</title>
+  </head>
+  <body>
+    
+    <!-- This is the top menu -->
+    <!-- <a></a> logo left -->
+    <!-- select right -->
+    
+    <div>
+      
+      <div id="loading" class="loading">
+        <div class="loader">Loading...</div>
+      </div>
+    
+    
+    <header class="header">
+      <div class="max-width-header">
+
+        <a href="#" class="logo">GitFood</a>
+        
+
+        
+          <div class="dflex-row select">
+            <select class="select-tag" id="categorySelector" >
+              <option value="GitFood" >GitFood</option>
+            </select>
+          </div>
+        
+      </div>
+    </header>
+
+    <!-- Image for category banner  -->
+
+    <section class="banner dflex-flexend-center" id="introBanner">
+      <div class="innerAligment dflex-column-alignCenter-justifyCenter">
+        
+        <h1 id="introBannerH1">
+          <span class="sr-only">Dishes category</span>
+        </h1>
+        <span id="introBannerSpan"></span>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="sr-only">
+        Dishes menu
+      </h2>
+      <div class="cards dflex-row-wrap-center" id="foodDishes">
+        <!-- list loaded dynamically -->
+      </div>
+    </section>
+
+    <section class="popup-window comments-popup">
+      <h2 class="sr-only">
+        Meal Comments popup window
+      </h2>
+      <div class="popup-window__content dflex-column-alignCenter-justifyFlexStart comments-popup__content" id="popup-comments-window">
+          <div class="popup-window__header comments-popup__header">
+            <button class="popup-window__close comments-popup__close" type="button"  >&times;</button>
+          </div>
+          <div class="popup-window__body comments-popup__body">
+          </div>
+        </div>
+    </section>
+    
+  </div>
+  </body>
+</html>

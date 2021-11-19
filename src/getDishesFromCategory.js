@@ -118,10 +118,6 @@ const getDishesFromCategory = async (categories, id) => {
   dishes = await dishes.json();
   dishes = dishes.meals;
 
-  if (dishes.length > 6) {
-    dishes.length = 6;
-  }
-
   resetCategoriesAndCountDishes(dishes, categories, id);
   const updatedLikes = await getLikes(dishes);
   renderDishesInDOM(dishes, updatedLikes);

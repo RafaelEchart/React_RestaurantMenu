@@ -18094,10 +18094,6 @@ const getDishesFromCategory = async (categories, id) => {
   dishes = await dishes.json();
   dishes = dishes.meals;
 
-  if (dishes.length > 6) {
-    dishes.length = 6;
-  }
-
   (0,_resetCategoriesAndCountDishes_js__WEBPACK_IMPORTED_MODULE_2__.resetCategoriesAndCountDishes)(dishes, categories, id);
   const updatedLikes = await (0,_involvementAPI_js__WEBPACK_IMPORTED_MODULE_1__.getLikes)(dishes);
   renderDishesInDOM(dishes, updatedLikes);

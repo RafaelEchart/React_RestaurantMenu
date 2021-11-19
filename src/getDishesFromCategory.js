@@ -31,21 +31,40 @@ const renderIntro = (categoryInfo) => {
 };
 
 const renderDishesInDOM = (dishes, likes) => {
+  let userLikes = localStorage.getItem('userLikes');
+
+  if (userLikes && userLikes.length) {
+    userLikes = JSON.parse(userLikes);
+  } else {
+    userLikes = [];
+  }
+
   const foodDishes = document.getElementById('foodDishes');
   console.log(dishes);
 
-  likes.forEach((like) => {
-    dishes.forEach((dish) => {
+  dishes.forEach((dish) => {
+    likes.forEach((like) => {
       if (dish.idMeal === like.item_id) {
         dish.likes = like.likes;
       }
     });
+
+    userLikes.forEach((savedLike) => {
+      if (dish.idMeal === savedLike) {
+        dish.savedLike = true;
+      }
+    });
   });
+
+  console.log(dishes);
 
   let html = '';
   for (let x = 0; x < dishes.length; x += 1) {
-    html += `<div class="card division flex-card dflex-row">
-        <div class="align_images">
+    html += `<div class="card division flex-card dflex-row" >
+
+  
+
+        <div class="align_images" id="card-${dishes[x].idMeal}">
           <img
             src="${dishes[x].strMealThumb}"
             width="554"
@@ -64,7 +83,7 @@ const renderDishesInDOM = (dishes, likes) => {
 }>
             <span>Comments</span>
             </button>
-            <svg class="ico" id='like-${
+            <svg ${dishes[x].savedLike ? "class='ico liked'" : "class='ico'"} id='like-${
   dishes[x].idMeal
 }' width="24" height="24" viewBox="0 0 24 24">
             

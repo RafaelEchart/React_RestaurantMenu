@@ -7,6 +7,7 @@ $flip-popup-duration: 0.3s;
 $comments-max-width: 500px;
 
 .popup-window {
+  display: flex;
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -17,13 +18,17 @@ $comments-max-width: 500px;
   pointer-events: all;
   opacity: 0;
   transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   h3 {
     font-size: 1.25rem;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
   }
 
   &--visible {
@@ -51,12 +56,15 @@ $comments-max-width: 500px;
   }
 
   &__close {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
+    position: fixed;
+    top: 4%;
+    right: 6%;
     font-size: 1.5rem;
-    color: $primary-color;
+    color: white;
+    width: 33px;
+    border-radius: 20px;
     cursor: pointer;
+    background-color: var(--primary-color);
   }
 
   .comments-form {
@@ -96,7 +104,8 @@ $comments-max-width: 500px;
     }
 
     &__submit {
-      width: unset;
+      width: 100px !important;
+      font-size: 16px;
       align-self: center !important;
       margin: 0.5rem 0;
     }
@@ -104,6 +113,7 @@ $comments-max-width: 500px;
 
   .popup-image {
     width: 90%;
+    max-width: 300px;
     height: auto;
     max-height: 50vh;
     object-fit: cover;
@@ -121,6 +131,7 @@ $comments-max-width: 500px;
     margin: 0;
     padding: 0;
     height: 400px;
+    max-height: 400px;
     overflow-y: scroll;
 
     &__item {
@@ -128,7 +139,7 @@ $comments-max-width: 500px;
       padding: 0.5rem 0.5rem 0.5rem 1rem;
       border-radius: 0.5rem;
       background-color: gray;
-      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
       pointer-events: all;
       color: $light-color;
       width: 90%;

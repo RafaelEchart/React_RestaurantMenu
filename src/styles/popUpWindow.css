@@ -1,7 +1,5 @@
 .popup-window {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -11,17 +9,9 @@
   z-index: 9999;
   pointer-events: all;
   opacity: 0;
-  -webkit-transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);
   transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -30,28 +20,19 @@
 }
 
 .popup-window header {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .popup-window--visible {
   opacity: 1;
-  -webkit-transform: rotate3d(1, 0.5, 0.5, 0deg) scale(1);
   transform: rotate3d(1, 0.5, 0.5, 0deg) scale(1);
-  -webkit-transition: all ease-in 0.3s;
   transition: all ease-in 0.3s;
 }
 
 .popup-window--hidden {
   opacity: 0;
-  -webkit-transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);
   transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);
-  -webkit-transition: all ease-in 0.3s;
   transition: all ease-in 0.3s;
 }
 
@@ -62,7 +43,6 @@
   background-color: var(--light-color);
   border-radius: 0.5rem;
   padding: 1rem;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
   pointer-events: all;
   overflow-y: scroll;
@@ -82,7 +62,7 @@
 
 .popup-window .comments-form {
   gap: 0.5rem;
-  width: 70%;
+  width: 100%;
   max-width: 500px;
 }
 
@@ -96,21 +76,18 @@
   border-radius: 0.5rem;
   padding: 0.5rem;
   font-family: var(--main-font);
-  -webkit-transition: all ease-in 0.3s;
   transition: all ease-in 0.3s;
 }
 
 .popup-window .comments-form input:focus-visible,
 .popup-window .comments-form textarea:focus-visible {
   background-color: var(--secondary-color);
-  -webkit-transform: scale(1.05);
   transform: scale(1.05);
   outline: 1px solid var(--primary-color);
 }
 
 .popup-window .comments-form input:hover,
 .popup-window .comments-form textarea:hover {
-  -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
 
@@ -125,9 +102,8 @@
 .popup-window .comments-form__submit {
   width: 100px !important;
   font-size: 16px;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-  margin: 0.5rem 8px;
+  align-self: center !important;
+  margin: 0.5rem 0;
 }
 
 .popup-window .popup-image {
@@ -135,7 +111,6 @@
   max-width: 300px;
   height: auto;
   max-height: 50vh;
-  -o-object-fit: cover;
   object-fit: cover;
   clear: both;
 }
@@ -160,7 +135,6 @@
   padding: 0.5rem 0.5rem 0.5rem 1rem;
   border-radius: 0.5rem;
   background-color: gray;
-  -webkit-box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
   pointer-events: all;
   color: var(--light-color);
@@ -169,16 +143,12 @@
 
 .meals-comments .comments-list__item-header {
   margin-bottom: 0.5rem;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .meals-comments .comments-list__item-header__info__name {
   font-size: 1.5rem;
   font-weight: bold;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -191,7 +161,5 @@
 .meals-comments .comments-list__item-header__info__date {
   font-size: 1rem;
   text-align: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }

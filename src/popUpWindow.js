@@ -133,14 +133,11 @@ const displayPopUpCommentWindow = async (dishIdMeal) => {
   
   
 </div>
-  <section class="meals-comments"> 
-    <h3 class="comments-header text-align-h3"></h3>
-    <div class="newAlign">
+  <section class="meals-comments dflex-column-alignCenter-justifyCenter"> 
+    <h3 class="comments-header"></h3>
     <ul class="comments-list dflex-column-alignCenter-justifyFlexStart" id="commentBox"></ul>
-    </div>
   </section>
   <h3>Add a comment</h3>
-  <div class="newWidth">
   <form class="comments-form dflex-column-alignCenter-justifyCenter">
   <label for="comment-name" hidden>Name</label>
   <input type="text" maxlength="250" id="comment-name" placeholder="Your name" required>
@@ -148,8 +145,7 @@ const displayPopUpCommentWindow = async (dishIdMeal) => {
   <textarea id="comment-text" placeholder="Your comment" required></textarea>
   <button type="submit" id="newcomment-button" class="comments-form__submit SeeCommentsButton"><div id="loading-newcomment" class="loading-newcomment">
   <div class="loader-comment">Loading...</div>
-  </div><span id="new-comment-text">Comment</span></button>
-  </div>
+</div><span id="new-comment-text">Comment</span></button>
   `;
 
   innerMenu();

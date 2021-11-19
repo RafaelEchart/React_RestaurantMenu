@@ -4,4 +4,3 @@ node_modules
 .stylelintrc.json
 .vscode/
 node_modules
-dist/

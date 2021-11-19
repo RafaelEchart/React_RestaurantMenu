@@ -25,6 +25,9 @@ export const addComment = async (comment) => {
       },
     },
   );
+  document.querySelector('#comment-name').value = '';
+  document.querySelector('#comment-text').value = '';
+
   return response;
 };
 

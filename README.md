@@ -4,7 +4,8 @@
 
 > Restaurant Capstone Project
 
-![screenshot](./src/README/app_screenshot.gif)
+![screenshot](./src/README/screenshot1.png)
+![screenshot](./src/README/screenshot2.png)
 
 ## Built With
 

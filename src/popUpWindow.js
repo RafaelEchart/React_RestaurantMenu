@@ -1,4 +1,6 @@
 import _ from 'lodash';
+import { innerMenu, convertYoutubeLink } from './innerMenu';
+
 import { addComment, fetchComments } from './involmentAPI.js';
 
 const popUpCommentWindow = document.getElementById('popup-comments-window');
@@ -66,6 +68,19 @@ const displayPopUpCommentWindow = async (dishIdMeal) => {
   );
   dish = await dish.json();
   [dish] = dish.meals;
+  console.log(dish);
+
+  let ingredient = '';
+  for (let x = 1; x <= 20; x += 1) {
+    if (dish[`strIngredient${x}`] === null || dish[`strIngredient${x}`] === '') break;
+    ingredient += `<span><strong>${dish[`strIngredient${x}`]}:</strong>  ${dish[`strMeasure${x}`]}</span>`;
+    // ingredient.push({
+    //   ingredient: dish[`strIngredient${x}`],
+    //   quantity: dish[`strMeasure${x}`],
+    // });
+  }
+
+  console.log(ingredient);
   popUpCommentWindow.parentElement.classList.remove('popup-window--hidden');
   popUpCommentWindow.parentElement.classList.add('popup-window--visible');
   popUpCommentWindow.innerHTML = `
@@ -74,11 +89,41 @@ const displayPopUpCommentWindow = async (dishIdMeal) => {
       <img src="${dish.strMealThumb}" alt="${dish.strMeal}" class="popup-image" width="400">
       <h3> ${dish.strMeal} </h3>
   </header>
-  <nav className="meal-navigation">
-      <button class="SeeCommentsButton">Ingredients</button>
-      <button class="SeeCommentsButton">Video</button>
-      <button class="SeeCommentsButton">Recipe</button>
-  </nav>
+  <div class="container">
+  <ul class="container__list">
+    <li class="container__item container__item_active">
+      <span class="container__link">Instructions</span>
+    </li>
+    <li class="container__item">
+      <span class="container__link">Ingredients</span>
+    </li>
+    <li class="container__item">
+      <span class="container__link">Video</span>
+    </li>
+   
+   
+  </ul>
+  <div class="container__inner">
+    <h2 class="content__subtitle">Intructions</h2>
+    <p class="content__description">
+    ${dish.strInstructions}
+    </p>
+  </div>
+  <div class="container__inner container__inner_hidden">
+    <h2 class="content__subtitle">Ingredients</h2>
+    <p class="content__description dflex-column-alignLeft-justifyCenter">
+    ${ingredient}
+    </p>
+  </div>
+  <div class="container__inner container__inner_hidden">
+      <div class="display_align container__inner">
+          <iframe id="iframe" class="iframe" src="https://www.youtube.com/embed/zqdgZLhoaos" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </div>
+  </div>
+  
+  
+</div>
   <section class="meals-comments dflex-column-alignCenter-justifyCenter"> 
     <h3 class="comments-header"></h3>
     <ul class="comments-list dflex-column-alignCenter-justifyFlexStart"></ul>
@@ -92,12 +137,17 @@ const displayPopUpCommentWindow = async (dishIdMeal) => {
     <button type="submit" class="comments-form__submit SeeCommentsButton">Comment</button>
   `;
 
+  innerMenu();
+  convertYoutubeLink(dish.strYoutube);
+
   const closePopUpWindow = document.getElementById('popup-window__close');
+  const iframe = document.getElementById('iframe');
   const commentsForm = document.querySelector('.comments-form');
 
   closePopUpWindow.addEventListener('click', () => {
     popUpCommentWindow.parentElement.classList.add('popup-window--hidden');
     popUpCommentWindow.parentElement.classList.remove('popup-window--visible');
+    iframe.src = '';
   });
   commentsForm.addEventListener('submit', async (event) => {
     event.preventDefault();

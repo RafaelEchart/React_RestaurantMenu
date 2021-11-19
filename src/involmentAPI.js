@@ -70,6 +70,18 @@ export const postLikes = async (id) => {
     likeCounter.innerHTML = `${newNumberOfLikes} Like${
       newNumberOfLikes > 1 ? 's' : ''
     }`;
+
+    let userLikes = localStorage.getItem('userLikes');
+    if (userLikes && userLikes.length) {
+      userLikes = JSON.parse(userLikes);
+      console.log(userLikes);
+
+      userLikes.push(id);
+
+      localStorage.setItem('userLikes', JSON.stringify(userLikes));
+    } else {
+      localStorage.setItem('userLikes', JSON.stringify([id]));
+    }
     return newNumberOfLikes;
   }
   return null;

@@ -36,6 +36,13 @@
   flex-direction: column;
 }
 
+.dflex-column-alignLeft-justifyCenter {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
 .dflex-column-alignCenter-justifyFlexStart {
   display: flex;
   justify-content: flex-start;

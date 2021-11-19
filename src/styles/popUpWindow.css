@@ -1,5 +1,6 @@
 .popup-window {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: fixed;
   top: 0;
   left: 0;
@@ -8,11 +9,21 @@
   z-index: 9999;
   pointer-events: all;
   opacity: 0;
-  transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);
+  -webkit-transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);
+          transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .popup-window h3 {
@@ -21,13 +32,17 @@
 
 .popup-window--visible {
   opacity: 1;
-  transform: rotate3d(1, 0.5, 0.5, 0deg) scale(1);
+  -webkit-transform: rotate3d(1, 0.5, 0.5, 0deg) scale(1);
+          transform: rotate3d(1, 0.5, 0.5, 0deg) scale(1);
+  -webkit-transition: all ease-in 0.3s;
   transition: all ease-in 0.3s;
 }
 
 .popup-window--hidden {
   opacity: 0;
-  transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);
+  -webkit-transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);
+          transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);
+  -webkit-transition: all ease-in 0.3s;
   transition: all ease-in 0.3s;
 }
 
@@ -38,7 +53,8 @@
   background-color: var(--light-color);
   border-radius: 0.5rem;
   padding: 1rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
   pointer-events: all;
   overflow-y: scroll;
 }
@@ -68,19 +84,22 @@
   border-radius: 0.5rem;
   padding: 0.5rem;
   font-family: var(--main-font);
+  -webkit-transition: all ease-in 0.3s;
   transition: all ease-in 0.3s;
 }
 
 .popup-window .comments-form input:focus-visible,
 .popup-window .comments-form textarea:focus-visible {
   background-color: var(--secondary-color);
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   outline: 1px solid var(--primary-color);
 }
 
 .popup-window .comments-form input:hover,
 .popup-window .comments-form textarea:hover {
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .popup-window .comments-form #comment-name {
@@ -93,7 +112,9 @@
 
 .popup-window .comments-form__submit {
   width: unset;
-  align-self: center !important;
+  -ms-flex-item-align: center !important;
+      -ms-grid-row-align: center !important;
+      align-self: center !important;
   margin: 0.5rem 0;
 }
 
@@ -101,7 +122,8 @@
   width: 90%;
   height: auto;
   max-height: 50vh;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   clear: both;
 }
 
@@ -124,7 +146,8 @@
   padding: 0.5rem 0.5rem 0.5rem 1rem;
   border-radius: 0.5rem;
   background-color: gray;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
   pointer-events: all;
   color: var(--light-color);
   width: 90%;
@@ -132,12 +155,16 @@
 
 .meals-comments .comments-list__item-header {
   margin-bottom: 0.5rem;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .meals-comments .comments-list__item-header__info__name {
   font-size: 1.5rem;
   font-weight: bold;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -150,5 +177,194 @@
 .meals-comments .comments-list__item-header__info__date {
   font-size: 1rem;
   text-align: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
+
+.container {
+  border: 1px solid lightgray;
+  width: 100%;
+  overflow-y: scroll;
+  min-height: 330px;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: rgba(33, 35, 38, 0.5) 0 10px 10px -10px;
+          box-shadow: rgba(33, 35, 38, 0.5) 0 10px 10px -10px;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.container__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-rows: (minmax(min-content, max-content))[1];
+      grid-template-rows: repeat(1, minmax(-webkit-min-content, -webkit-max-content));
+      grid-template-rows: repeat(1, minmax(min-content, max-content));
+  -ms-grid-columns: (minmax(min-content, max-content))[5];
+      grid-template-columns: repeat(5, minmax(-webkit-min-content, -webkit-max-content));
+      grid-template-columns: repeat(5, minmax(min-content, max-content));
+  grid-auto-rows: minmax(-webkit-min-content, -webkit-max-content);
+  grid-auto-rows: minmax(min-content, max-content);
+  grid-auto-columns: minmax(-webkit-min-content, -webkit-max-content);
+  grid-auto-columns: minmax(min-content, max-content);
+}
+
+.container__item {
+  width: 100px;
+  color: #4c6067;
+  min-height: 30px;
+  border-radius: 3px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  cursor: pointer;
+  position: relative;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.container__item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40%;
+  margin: 0 30%;
+  bottom: 0;
+  border-bottom: 1px solid #4c6067;
+}
+
+.container__item_active {
+  background: #4c6067;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #ebfaff;
+  font-weight: 300;
+}
+
+.container__link {
+  margin: 0;
+  padding: 0;
+}
+
+.container__inner {
+  width: 80%;
+  height: 200px;
+  margin: 45px auto 35px;
+}
+
+.content__subtitle {
+  -webkit-animation-name: smoothTop;
+          animation-name: smoothTop;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #404648;
+}
+
+.content__description {
+  -webkit-animation-name: smoothBottom;
+          animation-name: smoothBottom;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  color: #404648;
+}
+
+.container__inner_hidden {
+  display: none;
+}
+
+@-webkit-keyframes smoothTop {
+  0% {
+    opacity: 0.2;
+    -webkit-transform: translateY(7%);
+            transform: translateY(7%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes smoothTop {
+  0% {
+    opacity: 0.2;
+    -webkit-transform: translateY(7%);
+            transform: translateY(7%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes smoothBottom {
+  0% {
+    opacity: 0.2;
+    -webkit-transform: translateY(-3%);
+            transform: translateY(-3%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes smoothBottom {
+  0% {
+    opacity: 0.2;
+    -webkit-transform: translateY(-3%);
+            transform: translateY(-3%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+.display_align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.iframe {
+  width: 300px;
+}
+/*# sourceMappingURL=popUpWindow.css.map */

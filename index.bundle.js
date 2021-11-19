@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  --primary-color: #012138;\n  --secondary-color: #f9f9f9;\n  --gradient-color: #024d83;\n  --light-color: #fff;\n  --main-font: \"Poppins\", arial, helvetica, sans-serif;\n  --title-font: \"Countryside\", sans-serif;\n  --layout-max-width: 1350px;\n}\n\n.dflex-row {\n  display: flex;\n}\n\n.dflex-alignCenter {\n  align-items: center;\n}\n\n.dflex-flexend-center {\n  display: flex;\n  align-items: flex-end;\n  justify-content: center;\n}\n\n.dflex-center-spaceBetween {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  width: 100%;\n}\n\n.dflex-column-alignCenter-justifyCenter {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n}\n\n.dflex-column-alignCenter-justifyFlexStart {\n  display: flex;\n  justify-content: flex-start;\n  align-items: center;\n  flex-direction: column;\n}\n\n.dflex-row-wrap-center {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  flex-wrap: wrap;\n}\n\n.dflex-center {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n", "",{"version":3,"sources":["webpack://./src/styles/common.css"],"names":[],"mappings":"AAAA;EACE,wBAAwB;EACxB,0BAA0B;EAC1B,yBAAyB;EACzB,mBAAmB;EACnB,oDAAoD;EACpD,uCAAuC;EACvC,0BAA0B;AAC5B;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,qBAAqB;EACrB,uBAAuB;AACzB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,WAAW;AACb;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,2BAA2B;EAC3B,mBAAmB;EACnB,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB","sourcesContent":[":root {\n  --primary-color: #012138;\n  --secondary-color: #f9f9f9;\n  --gradient-color: #024d83;\n  --light-color: #fff;\n  --main-font: \"Poppins\", arial, helvetica, sans-serif;\n  --title-font: \"Countryside\", sans-serif;\n  --layout-max-width: 1350px;\n}\n\n.dflex-row {\n  display: flex;\n}\n\n.dflex-alignCenter {\n  align-items: center;\n}\n\n.dflex-flexend-center {\n  display: flex;\n  align-items: flex-end;\n  justify-content: center;\n}\n\n.dflex-center-spaceBetween {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  width: 100%;\n}\n\n.dflex-column-alignCenter-justifyCenter {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n}\n\n.dflex-column-alignCenter-justifyFlexStart {\n  display: flex;\n  justify-content: flex-start;\n  align-items: center;\n  flex-direction: column;\n}\n\n.dflex-row-wrap-center {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  flex-wrap: wrap;\n}\n\n.dflex-center {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  --primary-color: #012138;\n  --secondary-color: #f9f9f9;\n  --gradient-color: #024d83;\n  --light-color: #fff;\n  --main-font: \"Poppins\", arial, helvetica, sans-serif;\n  --title-font: \"Countryside\", sans-serif;\n  --layout-max-width: 1350px;\n}\n\n.dflex-row {\n  display: flex;\n}\n\n.dflex-alignCenter {\n  align-items: center;\n}\n\n.dflex-flexend-center {\n  display: flex;\n  align-items: flex-end;\n  justify-content: center;\n}\n\n.dflex-center-spaceBetween {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  width: 100%;\n}\n\n.dflex-column-alignCenter-justifyCenter {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n}\n\n.dflex-column-alignLeft-justifyCenter {\n  display: flex;\n  justify-content: center;\n  align-items: flex-start;\n  flex-direction: column;\n}\n\n.dflex-column-alignCenter-justifyFlexStart {\n  display: flex;\n  justify-content: flex-start;\n  align-items: center;\n  flex-direction: column;\n}\n\n.dflex-row-wrap-center {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  flex-wrap: wrap;\n}\n\n.dflex-center {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n", "",{"version":3,"sources":["webpack://./src/styles/common.css"],"names":[],"mappings":"AAAA;EACE,wBAAwB;EACxB,0BAA0B;EAC1B,yBAAyB;EACzB,mBAAmB;EACnB,oDAAoD;EACpD,uCAAuC;EACvC,0BAA0B;AAC5B;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,qBAAqB;EACrB,uBAAuB;AACzB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,WAAW;AACb;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,uBAAuB;EACvB,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,2BAA2B;EAC3B,mBAAmB;EACnB,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB","sourcesContent":[":root {\n  --primary-color: #012138;\n  --secondary-color: #f9f9f9;\n  --gradient-color: #024d83;\n  --light-color: #fff;\n  --main-font: \"Poppins\", arial, helvetica, sans-serif;\n  --title-font: \"Countryside\", sans-serif;\n  --layout-max-width: 1350px;\n}\n\n.dflex-row {\n  display: flex;\n}\n\n.dflex-alignCenter {\n  align-items: center;\n}\n\n.dflex-flexend-center {\n  display: flex;\n  align-items: flex-end;\n  justify-content: center;\n}\n\n.dflex-center-spaceBetween {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  width: 100%;\n}\n\n.dflex-column-alignCenter-justifyCenter {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n}\n\n.dflex-column-alignLeft-justifyCenter {\n  display: flex;\n  justify-content: center;\n  align-items: flex-start;\n  flex-direction: column;\n}\n\n.dflex-column-alignCenter-justifyFlexStart {\n  display: flex;\n  justify-content: flex-start;\n  align-items: center;\n  flex-direction: column;\n}\n\n.dflex-row-wrap-center {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  flex-wrap: wrap;\n}\n\n.dflex-center {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -48,7 +48,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".popup-window {\n  box-sizing: border-box;\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  z-index: 9999;\n  pointer-events: all;\n  opacity: 0;\n  transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n.popup-window h3 {\n  font-size: 1.25rem;\n}\n\n.popup-window--visible {\n  opacity: 1;\n  transform: rotate3d(1, 0.5, 0.5, 0deg) scale(1);\n  transition: all ease-in 0.3s;\n}\n\n.popup-window--hidden {\n  opacity: 0;\n  transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);\n  transition: all ease-in 0.3s;\n}\n\n.popup-window__content {\n  position: relative;\n  width: 90%;\n  height: 90%;\n  background-color: var(--light-color);\n  border-radius: 0.5rem;\n  padding: 1rem;\n  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);\n  pointer-events: all;\n  overflow-y: scroll;\n}\n\n.popup-window__close {\n  position: absolute;\n  top: 0.5rem;\n  right: 0.5rem;\n  font-size: 1.5rem;\n  color: var(--primary-color);\n  cursor: pointer;\n}\n\n.popup-window .comments-form {\n  gap: 0.5rem;\n  width: 100%;\n  max-width: 500px;\n}\n\n.popup-window .comments-form > * {\n  width: 90%;\n}\n\n.popup-window .comments-form input,\n.popup-window .comments-form textarea {\n  border: 1px solid gray;\n  border-radius: 0.5rem;\n  padding: 0.5rem;\n  font-family: var(--main-font);\n  transition: all ease-in 0.3s;\n}\n\n.popup-window .comments-form input:focus-visible,\n.popup-window .comments-form textarea:focus-visible {\n  background-color: var(--secondary-color);\n  transform: scale(1.05);\n  outline: 1px solid var(--primary-color);\n}\n\n.popup-window .comments-form input:hover,\n.popup-window .comments-form textarea:hover {\n  transform: scale(1.05);\n}\n\n.popup-window .comments-form #comment-name {\n  height: 25px;\n}\n\n.popup-window .comments-form #comment-text {\n  height: 50px;\n}\n\n.popup-window .comments-form__submit {\n  width: unset;\n  align-self: center !important;\n  margin: 0.5rem 0;\n}\n\n.popup-window .popup-image {\n  width: 90%;\n  height: auto;\n  max-height: 50vh;\n  object-fit: cover;\n  clear: both;\n}\n\n.meals-comments {\n  width: 100%;\n  max-width: 500px;\n}\n\n.meals-comments .comments-list {\n  list-style: none;\n  width: 100%;\n  margin: 0;\n  padding: 0;\n  height: 400px;\n  overflow-y: scroll;\n}\n\n.meals-comments .comments-list__item {\n  margin-bottom: 1rem;\n  padding: 0.5rem 0.5rem 0.5rem 1rem;\n  border-radius: 0.5rem;\n  background-color: gray;\n  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);\n  pointer-events: all;\n  color: var(--light-color);\n  width: 90%;\n}\n\n.meals-comments .comments-list__item-header {\n  margin-bottom: 0.5rem;\n  align-items: center;\n}\n\n.meals-comments .comments-list__item-header__info__name {\n  font-size: 1.5rem;\n  font-weight: bold;\n  display: inline-flex;\n}\n\n.meals-comments .comments-list__item-header__info__name::after {\n  content: '-';\n  margin: 0 0.5rem;\n  font-size: 1rem;\n}\n\n.meals-comments .comments-list__item-header__info__date {\n  font-size: 1rem;\n  text-align: center;\n  display: inline-flex;\n}\n", "",{"version":3,"sources":["webpack://./src/styles/popUpWindow.css"],"names":[],"mappings":"AAAA;EACE,sBAAsB;EACtB,eAAe;EACf,MAAM;EACN,OAAO;EACP,YAAY;EACZ,aAAa;EACb,aAAa;EACb,mBAAmB;EACnB,UAAU;EACV,iDAAiD;EACjD,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;AACrB;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,UAAU;EACV,+CAA+C;EAC/C,4BAA4B;AAC9B;;AAEA;EACE,UAAU;EACV,iDAAiD;EACjD,4BAA4B;AAC9B;;AAEA;EACE,kBAAkB;EAClB,UAAU;EACV,WAAW;EACX,oCAAoC;EACpC,qBAAqB;EACrB,aAAa;EACb,4CAA4C;EAC5C,mBAAmB;EACnB,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;EAClB,WAAW;EACX,aAAa;EACb,iBAAiB;EACjB,2BAA2B;EAC3B,eAAe;AACjB;;AAEA;EACE,WAAW;EACX,WAAW;EACX,gBAAgB;AAClB;;AAEA;EACE,UAAU;AACZ;;AAEA;;EAEE,sBAAsB;EACtB,qBAAqB;EACrB,eAAe;EACf,6BAA6B;EAC7B,4BAA4B;AAC9B;;AAEA;;EAEE,wCAAwC;EACxC,sBAAsB;EACtB,uCAAuC;AACzC;;AAEA;;EAEE,sBAAsB;AACxB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,6BAA6B;EAC7B,gBAAgB;AAClB;;AAEA;EACE,UAAU;EACV,YAAY;EACZ,gBAAgB;EAChB,iBAAiB;EACjB,WAAW;AACb;;AAEA;EACE,WAAW;EACX,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;EAChB,WAAW;EACX,SAAS;EACT,UAAU;EACV,aAAa;EACb,kBAAkB;AACpB;;AAEA;EACE,mBAAmB;EACnB,kCAAkC;EAClC,qBAAqB;EACrB,sBAAsB;EACtB,4CAA4C;EAC5C,mBAAmB;EACnB,yBAAyB;EACzB,UAAU;AACZ;;AAEA;EACE,qBAAqB;EACrB,mBAAmB;AACrB;;AAEA;EACE,iBAAiB;EACjB,iBAAiB;EACjB,oBAAoB;AACtB;;AAEA;EACE,YAAY;EACZ,gBAAgB;EAChB,eAAe;AACjB;;AAEA;EACE,eAAe;EACf,kBAAkB;EAClB,oBAAoB;AACtB","sourcesContent":[".popup-window {\n  box-sizing: border-box;\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  z-index: 9999;\n  pointer-events: all;\n  opacity: 0;\n  transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n.popup-window h3 {\n  font-size: 1.25rem;\n}\n\n.popup-window--visible {\n  opacity: 1;\n  transform: rotate3d(1, 0.5, 0.5, 0deg) scale(1);\n  transition: all ease-in 0.3s;\n}\n\n.popup-window--hidden {\n  opacity: 0;\n  transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);\n  transition: all ease-in 0.3s;\n}\n\n.popup-window__content {\n  position: relative;\n  width: 90%;\n  height: 90%;\n  background-color: var(--light-color);\n  border-radius: 0.5rem;\n  padding: 1rem;\n  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);\n  pointer-events: all;\n  overflow-y: scroll;\n}\n\n.popup-window__close {\n  position: absolute;\n  top: 0.5rem;\n  right: 0.5rem;\n  font-size: 1.5rem;\n  color: var(--primary-color);\n  cursor: pointer;\n}\n\n.popup-window .comments-form {\n  gap: 0.5rem;\n  width: 100%;\n  max-width: 500px;\n}\n\n.popup-window .comments-form > * {\n  width: 90%;\n}\n\n.popup-window .comments-form input,\n.popup-window .comments-form textarea {\n  border: 1px solid gray;\n  border-radius: 0.5rem;\n  padding: 0.5rem;\n  font-family: var(--main-font);\n  transition: all ease-in 0.3s;\n}\n\n.popup-window .comments-form input:focus-visible,\n.popup-window .comments-form textarea:focus-visible {\n  background-color: var(--secondary-color);\n  transform: scale(1.05);\n  outline: 1px solid var(--primary-color);\n}\n\n.popup-window .comments-form input:hover,\n.popup-window .comments-form textarea:hover {\n  transform: scale(1.05);\n}\n\n.popup-window .comments-form #comment-name {\n  height: 25px;\n}\n\n.popup-window .comments-form #comment-text {\n  height: 50px;\n}\n\n.popup-window .comments-form__submit {\n  width: unset;\n  align-self: center !important;\n  margin: 0.5rem 0;\n}\n\n.popup-window .popup-image {\n  width: 90%;\n  height: auto;\n  max-height: 50vh;\n  object-fit: cover;\n  clear: both;\n}\n\n.meals-comments {\n  width: 100%;\n  max-width: 500px;\n}\n\n.meals-comments .comments-list {\n  list-style: none;\n  width: 100%;\n  margin: 0;\n  padding: 0;\n  height: 400px;\n  overflow-y: scroll;\n}\n\n.meals-comments .comments-list__item {\n  margin-bottom: 1rem;\n  padding: 0.5rem 0.5rem 0.5rem 1rem;\n  border-radius: 0.5rem;\n  background-color: gray;\n  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);\n  pointer-events: all;\n  color: var(--light-color);\n  width: 90%;\n}\n\n.meals-comments .comments-list__item-header {\n  margin-bottom: 0.5rem;\n  align-items: center;\n}\n\n.meals-comments .comments-list__item-header__info__name {\n  font-size: 1.5rem;\n  font-weight: bold;\n  display: inline-flex;\n}\n\n.meals-comments .comments-list__item-header__info__name::after {\n  content: '-';\n  margin: 0 0.5rem;\n  font-size: 1rem;\n}\n\n.meals-comments .comments-list__item-header__info__date {\n  font-size: 1rem;\n  text-align: center;\n  display: inline-flex;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".popup-window {\n  display: flex;\n  box-sizing: border-box;\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  z-index: 9999;\n  pointer-events: all;\n  opacity: 0;\n  transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n.popup-window h3 {\n  font-size: 1.25rem;\n}\n\n.popup-window header {\n  flex-direction: column;\n  align-items: center;\n}\n\n.popup-window--visible {\n  opacity: 1;\n  transform: rotate3d(1, 0.5, 0.5, 0deg) scale(1);\n  transition: all ease-in 0.3s;\n}\n\n.popup-window--hidden {\n  opacity: 0;\n  transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);\n  transition: all ease-in 0.3s;\n}\n\n.popup-window__content {\n  position: relative;\n  width: 90%;\n  height: 90%;\n  background-color: var(--light-color);\n  border-radius: 0.5rem;\n  padding: 1rem;\n  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);\n  pointer-events: all;\n  overflow-y: scroll;\n}\n\n.popup-window__close {\n  position: fixed;\n  top: 4%;\n  right: 6%;\n  font-size: 1.5rem;\n  color: white;\n  width: 33px;\n  border-radius: 20px;\n  cursor: pointer;\n  background-color: var(--primary-color);\n}\n\n.popup-window .comments-form {\n  gap: 0.5rem;\n  width: 100%;\n  max-width: 500px;\n}\n\n.popup-window .comments-form > * {\n  width: 90%;\n}\n\n.popup-window .comments-form input,\n.popup-window .comments-form textarea {\n  border: 1px solid gray;\n  border-radius: 0.5rem;\n  padding: 0.5rem;\n  font-family: var(--main-font);\n  transition: all ease-in 0.3s;\n}\n\n.popup-window .comments-form input:focus-visible,\n.popup-window .comments-form textarea:focus-visible {\n  background-color: var(--secondary-color);\n  transform: scale(1.05);\n  outline: 1px solid var(--primary-color);\n}\n\n.popup-window .comments-form input:hover,\n.popup-window .comments-form textarea:hover {\n  transform: scale(1.05);\n}\n\n.popup-window .comments-form #comment-name {\n  height: 25px;\n}\n\n.popup-window .comments-form #comment-text {\n  height: 50px;\n}\n\n.popup-window .comments-form__submit {\n  width: 100px !important;\n  font-size: 16px;\n  align-self: center !important;\n  margin: 0.5rem 0;\n}\n\n.popup-window .popup-image {\n  width: 90%;\n  max-width: 300px;\n  height: auto;\n  max-height: 50vh;\n  object-fit: cover;\n  clear: both;\n}\n\n.meals-comments {\n  width: 100%;\n  max-width: 500px;\n}\n\n.meals-comments .comments-list {\n  list-style: none;\n  width: 100%;\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  max-height: 400px;\n  overflow-y: scroll;\n}\n\n.meals-comments .comments-list__item {\n  margin-bottom: 1rem;\n  padding: 0.5rem 0.5rem 0.5rem 1rem;\n  border-radius: 0.5rem;\n  background-color: gray;\n  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3);\n  pointer-events: all;\n  color: var(--light-color);\n  width: 90%;\n}\n\n.meals-comments .comments-list__item-header {\n  margin-bottom: 0.5rem;\n  align-items: center;\n}\n\n.meals-comments .comments-list__item-header__info__name {\n  font-size: 1.5rem;\n  font-weight: bold;\n  display: inline-flex;\n}\n\n.meals-comments .comments-list__item-header__info__name::after {\n  content: '-';\n  margin: 0 0.5rem;\n  font-size: 1rem;\n}\n\n.meals-comments .comments-list__item-header__info__date {\n  font-size: 1rem;\n  text-align: center;\n  display: inline-flex;\n}\n", "",{"version":3,"sources":["webpack://./src/styles/popUpWindow.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,sBAAsB;EACtB,eAAe;EACf,MAAM;EACN,OAAO;EACP,YAAY;EACZ,aAAa;EACb,aAAa;EACb,mBAAmB;EACnB,UAAU;EACV,iDAAiD;EACjD,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;AACrB;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA;EACE,UAAU;EACV,+CAA+C;EAC/C,4BAA4B;AAC9B;;AAEA;EACE,UAAU;EACV,iDAAiD;EACjD,4BAA4B;AAC9B;;AAEA;EACE,kBAAkB;EAClB,UAAU;EACV,WAAW;EACX,oCAAoC;EACpC,qBAAqB;EACrB,aAAa;EACb,4CAA4C;EAC5C,mBAAmB;EACnB,kBAAkB;AACpB;;AAEA;EACE,eAAe;EACf,OAAO;EACP,SAAS;EACT,iBAAiB;EACjB,YAAY;EACZ,WAAW;EACX,mBAAmB;EACnB,eAAe;EACf,sCAAsC;AACxC;;AAEA;EACE,WAAW;EACX,WAAW;EACX,gBAAgB;AAClB;;AAEA;EACE,UAAU;AACZ;;AAEA;;EAEE,sBAAsB;EACtB,qBAAqB;EACrB,eAAe;EACf,6BAA6B;EAC7B,4BAA4B;AAC9B;;AAEA;;EAEE,wCAAwC;EACxC,sBAAsB;EACtB,uCAAuC;AACzC;;AAEA;;EAEE,sBAAsB;AACxB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,uBAAuB;EACvB,eAAe;EACf,6BAA6B;EAC7B,gBAAgB;AAClB;;AAEA;EACE,UAAU;EACV,gBAAgB;EAChB,YAAY;EACZ,gBAAgB;EAChB,iBAAiB;EACjB,WAAW;AACb;;AAEA;EACE,WAAW;EACX,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;EAChB,WAAW;EACX,SAAS;EACT,UAAU;EACV,YAAY;EACZ,iBAAiB;EACjB,kBAAkB;AACpB;;AAEA;EACE,mBAAmB;EACnB,kCAAkC;EAClC,qBAAqB;EACrB,sBAAsB;EACtB,8CAA8C;EAC9C,mBAAmB;EACnB,yBAAyB;EACzB,UAAU;AACZ;;AAEA;EACE,qBAAqB;EACrB,mBAAmB;AACrB;;AAEA;EACE,iBAAiB;EACjB,iBAAiB;EACjB,oBAAoB;AACtB;;AAEA;EACE,YAAY;EACZ,gBAAgB;EAChB,eAAe;AACjB;;AAEA;EACE,eAAe;EACf,kBAAkB;EAClB,oBAAoB;AACtB","sourcesContent":[".popup-window {\n  display: flex;\n  box-sizing: border-box;\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  z-index: 9999;\n  pointer-events: all;\n  opacity: 0;\n  transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n.popup-window h3 {\n  font-size: 1.25rem;\n}\n\n.popup-window header {\n  flex-direction: column;\n  align-items: center;\n}\n\n.popup-window--visible {\n  opacity: 1;\n  transform: rotate3d(1, 0.5, 0.5, 0deg) scale(1);\n  transition: all ease-in 0.3s;\n}\n\n.popup-window--hidden {\n  opacity: 0;\n  transform: rotate3d(1, 0.5, 0.5, 180deg) scale(0);\n  transition: all ease-in 0.3s;\n}\n\n.popup-window__content {\n  position: relative;\n  width: 90%;\n  height: 90%;\n  background-color: var(--light-color);\n  border-radius: 0.5rem;\n  padding: 1rem;\n  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);\n  pointer-events: all;\n  overflow-y: scroll;\n}\n\n.popup-window__close {\n  position: fixed;\n  top: 4%;\n  right: 6%;\n  font-size: 1.5rem;\n  color: white;\n  width: 33px;\n  border-radius: 20px;\n  cursor: pointer;\n  background-color: var(--primary-color);\n}\n\n.popup-window .comments-form {\n  gap: 0.5rem;\n  width: 100%;\n  max-width: 500px;\n}\n\n.popup-window .comments-form > * {\n  width: 90%;\n}\n\n.popup-window .comments-form input,\n.popup-window .comments-form textarea {\n  border: 1px solid gray;\n  border-radius: 0.5rem;\n  padding: 0.5rem;\n  font-family: var(--main-font);\n  transition: all ease-in 0.3s;\n}\n\n.popup-window .comments-form input:focus-visible,\n.popup-window .comments-form textarea:focus-visible {\n  background-color: var(--secondary-color);\n  transform: scale(1.05);\n  outline: 1px solid var(--primary-color);\n}\n\n.popup-window .comments-form input:hover,\n.popup-window .comments-form textarea:hover {\n  transform: scale(1.05);\n}\n\n.popup-window .comments-form #comment-name {\n  height: 25px;\n}\n\n.popup-window .comments-form #comment-text {\n  height: 50px;\n}\n\n.popup-window .comments-form__submit {\n  width: 100px !important;\n  font-size: 16px;\n  align-self: center !important;\n  margin: 0.5rem 0;\n}\n\n.popup-window .popup-image {\n  width: 90%;\n  max-width: 300px;\n  height: auto;\n  max-height: 50vh;\n  object-fit: cover;\n  clear: both;\n}\n\n.meals-comments {\n  width: 100%;\n  max-width: 500px;\n}\n\n.meals-comments .comments-list {\n  list-style: none;\n  width: 100%;\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  max-height: 400px;\n  overflow-y: scroll;\n}\n\n.meals-comments .comments-list__item {\n  margin-bottom: 1rem;\n  padding: 0.5rem 0.5rem 0.5rem 1rem;\n  border-radius: 0.5rem;\n  background-color: gray;\n  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3);\n  pointer-events: all;\n  color: var(--light-color);\n  width: 90%;\n}\n\n.meals-comments .comments-list__item-header {\n  margin-bottom: 0.5rem;\n  align-items: center;\n}\n\n.meals-comments .comments-list__item-header__info__name {\n  font-size: 1.5rem;\n  font-weight: bold;\n  display: inline-flex;\n}\n\n.meals-comments .comments-list__item-header__info__name::after {\n  content: '-';\n  margin: 0 0.5rem;\n  font-size: 1rem;\n}\n\n.meals-comments .comments-list__item-header__info__date {\n  font-size: 1rem;\n  text-align: center;\n  display: inline-flex;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -81,7 +81,7 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.cdnfonts.com/css/countryside);"]);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "html {\n  scroll-behavior: smooth;\n}\n\nbody {\n  margin: 0;\n  font-family: var(--main-font);\n  background:\n    radial-gradient(\n      ellipse farthest-corner at center top,\n      var(--gradient-color) 0%,\n      var(--primary-color) 100%\n    );\n  min-height: 100vh;\n}\n\n.header {\n  align-items: center;\n  justify-content: space-between;\n  position: unset;\n  width: 100%;\n  z-index: 3;\n  height: 0;\n  margin-bottom: 40px;\n}\n\n.max-width-header {\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: space-around;\n  max-width: var(--layout-max-width);\n  margin: auto;\n}\n\n.header .logo {\n  display: block;\n  float: left;\n  font-size: 27px;\n  padding: 10px 20px;\n  margin-top: 6.5px;\n  text-decoration: none;\n  color: var(--secondary-color);\n  font-style: normal;\n}\n\na {\n  color: #344563;\n  font-family: var(--main-font);\n  font-weight: 400;\n}\n\n.desktopMenu-up {\n  display: block;\n}\n\n.topnav {\n  width: fit-content;\n  font-family: var(--main-font);\n}\n\n.topnav a {\n  text-decoration: none;\n  font-size: 16px;\n  padding: 7px 16px;\n}\n\n.select-tag {\n  appearance: none;\n  outline: 0;\n  border: 0;\n  box-shadow: none;\n  flex: 1;\n  padding: 0 1em;\n  color: var(--light-color);\n  background-color: #0365ac;\n  background-image: none;\n  cursor: pointer;\n  font-size: 16px;\n}\n\n.select {\n  position: relative;\n  width: 20em;\n  height: 3em;\n  border-radius: 0.25em;\n  overflow: hidden;\n  margin-right: 20px;\n}\n\n.select::after {\n  content: \"\\25BC\";\n  position: absolute;\n  top: 0;\n  right: 0;\n  padding: 1em;\n  background-color: #024e85;\n  transition: 0.25s all ease;\n  pointer-events: none;\n}\n\n/* Transition */\n.select:hover::after {\n  color: #29a3fb;\n}\n\n.banner {\n  width: 100%;\n  height: 65vh;\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  margin-bottom: 230px;\n}\n\n.banner h1 {\n  font-size: 45px;\n  color: #dbdbdb;\n  font-family: var(--title-font);\n  height: 30%;\n  margin: 0;\n}\n\n.banner span {\n  height: 19%;\n  margin-top: 60px;\n  color: var(--secondary-color);\n}\n\n.innerAligment {\n  max-width: 550px;\n  min-width: 250px;\n  margin: 30px 30px -70px 30px;\n  text-align: center;\n  height: 140px;\n}\n\n.cards {\n  width: 100%;\n  max-width: var(--layout-max-width);\n  margin: 0 auto;\n  grid-gap: 1rem;\n}\n\n.flex-card {\n  flex-wrap: wrap;\n  max-width: 100%;\n  transition-property: border-color, box-shadow;\n  transition-duration: 1.5s;\n}\n\n.align_images {\n  margin: auto;\n}\n\n.imagen_proyectos {\n  width: 100%;\n  border-radius: 8px;\n}\n\n.text_child h2 {\n  font-weight: 700;\n  line-height: 35px;\n  margin: 15px 0 0 0;\n}\n\n.text_child p {\n  color: #344563;\n  word-break: normal;\n  max-width: 430px;\n}\n\n.text_child {\n  margin-left: 2%;\n  width: 90%;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n}\n\n.card {\n  background-color: var(--light-color);\n  padding: 1rem;\n  margin: 40px 2% 2% 2%;\n  width: 300px;\n  border: 2px solid #dfe1e6;\n  border-radius: 24px;\n}\n\n@media only screen and (min-width: 500px) {\n  .card {\n    margin: 0% 2% 2% 2%;\n  }\n}\n\n.gray_text {\n  color: gray;\n  margin-left: 13px;\n  font-size: 0.8rem;\n}\n\n.SeeCommentsButton {\n  border: 1px solid var(--primary-color);\n  border-radius: 8px;\n  box-sizing: border-box;\n  background: var(--light-color);\n  height: 48px;\n  margin-top: 25px;\n  margin-bottom: 19px;\n  color: var(--primary-color);\n  cursor: pointer;\n  align-self: flex-start;\n}\n\n.SeeCommentsButton:hover {\n  background: var(--gradient-color);\n  color: var(--light-color);\n  transition: 0.2s 0.1s;\n}\n\n.SeeCommentsButton:active {\n  background: var(--primary-color);\n  color: var(--light-color);\n  transition: 0s 0s;\n}\n\n.SeeCommentsButton span {\n  margin: 0 10px;\n  font-family: var(--main-font);\n  font-weight: 200;\n  font-size: 17px;\n  line-height: 24px;\n  pointer-events: none;\n}\n\n.footer {\n  width: 100%;\n  height: 100px;\n  margin-top: 100px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background: var(--primary-color);\n}\n\n.footer__content {\n  max-width: var(--layout-max-width);\n  color: var(--light-color);\n}\n\n.loading {\n  position: absolute;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 100%;\n  height: 100%;\n  opacity: 1;\n  background: rgba(0, 0, 0, 0.5);\n  z-index: 99;\n}\n\n.loader,\n.loader::after {\n  border-radius: 50%;\n  width: 5em;\n  height: 5em;\n}\n\n.loader {\n  margin: 60px auto;\n  font-size: 10px;\n  position: relative;\n  text-indent: -9999em;\n  border-top: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-right: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-left: 1.1em solid #fff;\n  -webkit-transform: translateZ(0);\n  -ms-transform: translateZ(0);\n  transform: translateZ(0);\n  -webkit-animation: load8 1.1s infinite linear;\n  animation: load8 1.1s infinite linear;\n}\n\n@-webkit-keyframes load8 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes load8 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n\n.like-text {\n  font-weight: 100;\n}\n\n.ico {\n  border-radius: 50%;\n  cursor: pointer;\n  fill: #232323;\n  transition: 0.4s;\n}\n\n.liked {\n  transform: scale(1) rotate(360deg);\n  background-color: #c62828;\n  padding: 0.8rem;\n  fill: white;\n}\n", "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AAEA;EACE,uBAAuB;AACzB;;AAEA;EACE,SAAS;EACT,6BAA6B;EAC7B;;;;;KAKG;EACH,iBAAiB;AACnB;;AAEA;EACE,mBAAmB;EACnB,8BAA8B;EAC9B,eAAe;EACf,WAAW;EACX,UAAU;EACV,SAAS;EACT,mBAAmB;AACrB;;AAEA;EACE,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,6BAA6B;EAC7B,kCAAkC;EAClC,YAAY;AACd;;AAEA;EACE,cAAc;EACd,WAAW;EACX,eAAe;EACf,kBAAkB;EAClB,iBAAiB;EACjB,qBAAqB;EACrB,6BAA6B;EAC7B,kBAAkB;AACpB;;AAEA;EACE,cAAc;EACd,6BAA6B;EAC7B,gBAAgB;AAClB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,kBAAkB;EAClB,6BAA6B;AAC/B;;AAEA;EACE,qBAAqB;EACrB,eAAe;EACf,iBAAiB;AACnB;;AAEA;EACE,gBAAgB;EAChB,UAAU;EACV,SAAS;EACT,gBAAgB;EAChB,OAAO;EACP,cAAc;EACd,yBAAyB;EACzB,yBAAyB;EACzB,sBAAsB;EACtB,eAAe;EACf,eAAe;AACjB;;AAEA;EACE,kBAAkB;EAClB,WAAW;EACX,WAAW;EACX,qBAAqB;EACrB,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE,gBAAgB;EAChB,kBAAkB;EAClB,MAAM;EACN,QAAQ;EACR,YAAY;EACZ,yBAAyB;EACzB,0BAA0B;EAC1B,oBAAoB;AACtB;;AAEA,eAAe;AACf;EACE,cAAc;AAChB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,yDAAoD;EACpD,4BAA4B;EAC5B,2BAA2B;EAC3B,oBAAoB;AACtB;;AAEA;EACE,eAAe;EACf,cAAc;EACd,8BAA8B;EAC9B,WAAW;EACX,SAAS;AACX;;AAEA;EACE,WAAW;EACX,gBAAgB;EAChB,6BAA6B;AAC/B;;AAEA;EACE,gBAAgB;EAChB,gBAAgB;EAChB,4BAA4B;EAC5B,kBAAkB;EAClB,aAAa;AACf;;AAEA;EACE,WAAW;EACX,kCAAkC;EAClC,cAAc;EACd,cAAc;AAChB;;AAEA;EACE,eAAe;EACf,eAAe;EACf,6CAA6C;EAC7C,yBAAyB;AAC3B;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,WAAW;EACX,kBAAkB;AACpB;;AAEA;EACE,gBAAgB;EAChB,iBAAiB;EACjB,kBAAkB;AACpB;;AAEA;EACE,cAAc;EACd,kBAAkB;EAClB,gBAAgB;AAClB;;AAEA;EACE,eAAe;EACf,UAAU;EACV,aAAa;EACb,sBAAsB;EACtB,8BAA8B;AAChC;;AAEA;EACE,oCAAoC;EACpC,aAAa;EACb,qBAAqB;EACrB,YAAY;EACZ,yBAAyB;EACzB,mBAAmB;AACrB;;AAEA;EACE;IACE,mBAAmB;EACrB;AACF;;AAEA;EACE,WAAW;EACX,iBAAiB;EACjB,iBAAiB;AACnB;;AAEA;EACE,sCAAsC;EACtC,kBAAkB;EAClB,sBAAsB;EACtB,8BAA8B;EAC9B,YAAY;EACZ,gBAAgB;EAChB,mBAAmB;EACnB,2BAA2B;EAC3B,eAAe;EACf,sBAAsB;AACxB;;AAEA;EACE,iCAAiC;EACjC,yBAAyB;EACzB,qBAAqB;AACvB;;AAEA;EACE,gCAAgC;EAChC,yBAAyB;EACzB,iBAAiB;AACnB;;AAEA;EACE,cAAc;EACd,6BAA6B;EAC7B,gBAAgB;EAChB,eAAe;EACf,iBAAiB;EACjB,oBAAoB;AACtB;;AAEA;EACE,WAAW;EACX,aAAa;EACb,iBAAiB;EACjB,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,gCAAgC;AAClC;;AAEA;EACE,kCAAkC;EAClC,yBAAyB;AAC3B;;AAEA;EACE,kBAAkB;EAClB,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,WAAW;EACX,YAAY;EACZ,UAAU;EACV,8BAA8B;EAC9B,WAAW;AACb;;AAEA;;EAEE,kBAAkB;EAClB,UAAU;EACV,WAAW;AACb;;AAEA;EACE,iBAAiB;EACjB,eAAe;EACf,kBAAkB;EAClB,oBAAoB;EACpB,gDAAgD;EAChD,kDAAkD;EAClD,mDAAmD;EACnD,6BAA6B;EAC7B,gCAAgC;EAChC,4BAA4B;EAC5B,wBAAwB;EACxB,6CAA6C;EAC7C,qCAAqC;AACvC;;AAEA;EACE;IACE,+BAA+B;IAC/B,uBAAuB;EACzB;;EAEA;IACE,iCAAiC;IACjC,yBAAyB;EAC3B;AACF;;AAEA;EACE;IACE,+BAA+B;IAC/B,uBAAuB;EACzB;;EAEA;IACE,iCAAiC;IACjC,yBAAyB;EAC3B;AACF;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,kBAAkB;EAClB,eAAe;EACf,aAAa;EACb,gBAAgB;AAClB;;AAEA;EACE,kCAAkC;EAClC,yBAAyB;EACzB,eAAe;EACf,WAAW;AACb","sourcesContent":["@import url(\"https://fonts.cdnfonts.com/css/countryside\");\n\nhtml {\n  scroll-behavior: smooth;\n}\n\nbody {\n  margin: 0;\n  font-family: var(--main-font);\n  background:\n    radial-gradient(\n      ellipse farthest-corner at center top,\n      var(--gradient-color) 0%,\n      var(--primary-color) 100%\n    );\n  min-height: 100vh;\n}\n\n.header {\n  align-items: center;\n  justify-content: space-between;\n  position: unset;\n  width: 100%;\n  z-index: 3;\n  height: 0;\n  margin-bottom: 40px;\n}\n\n.max-width-header {\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: space-around;\n  max-width: var(--layout-max-width);\n  margin: auto;\n}\n\n.header .logo {\n  display: block;\n  float: left;\n  font-size: 27px;\n  padding: 10px 20px;\n  margin-top: 6.5px;\n  text-decoration: none;\n  color: var(--secondary-color);\n  font-style: normal;\n}\n\na {\n  color: #344563;\n  font-family: var(--main-font);\n  font-weight: 400;\n}\n\n.desktopMenu-up {\n  display: block;\n}\n\n.topnav {\n  width: fit-content;\n  font-family: var(--main-font);\n}\n\n.topnav a {\n  text-decoration: none;\n  font-size: 16px;\n  padding: 7px 16px;\n}\n\n.select-tag {\n  appearance: none;\n  outline: 0;\n  border: 0;\n  box-shadow: none;\n  flex: 1;\n  padding: 0 1em;\n  color: var(--light-color);\n  background-color: #0365ac;\n  background-image: none;\n  cursor: pointer;\n  font-size: 16px;\n}\n\n.select {\n  position: relative;\n  width: 20em;\n  height: 3em;\n  border-radius: 0.25em;\n  overflow: hidden;\n  margin-right: 20px;\n}\n\n.select::after {\n  content: \"\\25BC\";\n  position: absolute;\n  top: 0;\n  right: 0;\n  padding: 1em;\n  background-color: #024e85;\n  transition: 0.25s all ease;\n  pointer-events: none;\n}\n\n/* Transition */\n.select:hover::after {\n  color: #29a3fb;\n}\n\n.banner {\n  width: 100%;\n  height: 65vh;\n  background-image: url(\"../assets/loading-image.png\");\n  background-repeat: no-repeat;\n  background-position: center;\n  margin-bottom: 230px;\n}\n\n.banner h1 {\n  font-size: 45px;\n  color: #dbdbdb;\n  font-family: var(--title-font);\n  height: 30%;\n  margin: 0;\n}\n\n.banner span {\n  height: 19%;\n  margin-top: 60px;\n  color: var(--secondary-color);\n}\n\n.innerAligment {\n  max-width: 550px;\n  min-width: 250px;\n  margin: 30px 30px -70px 30px;\n  text-align: center;\n  height: 140px;\n}\n\n.cards {\n  width: 100%;\n  max-width: var(--layout-max-width);\n  margin: 0 auto;\n  grid-gap: 1rem;\n}\n\n.flex-card {\n  flex-wrap: wrap;\n  max-width: 100%;\n  transition-property: border-color, box-shadow;\n  transition-duration: 1.5s;\n}\n\n.align_images {\n  margin: auto;\n}\n\n.imagen_proyectos {\n  width: 100%;\n  border-radius: 8px;\n}\n\n.text_child h2 {\n  font-weight: 700;\n  line-height: 35px;\n  margin: 15px 0 0 0;\n}\n\n.text_child p {\n  color: #344563;\n  word-break: normal;\n  max-width: 430px;\n}\n\n.text_child {\n  margin-left: 2%;\n  width: 90%;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n}\n\n.card {\n  background-color: var(--light-color);\n  padding: 1rem;\n  margin: 40px 2% 2% 2%;\n  width: 300px;\n  border: 2px solid #dfe1e6;\n  border-radius: 24px;\n}\n\n@media only screen and (min-width: 500px) {\n  .card {\n    margin: 0% 2% 2% 2%;\n  }\n}\n\n.gray_text {\n  color: gray;\n  margin-left: 13px;\n  font-size: 0.8rem;\n}\n\n.SeeCommentsButton {\n  border: 1px solid var(--primary-color);\n  border-radius: 8px;\n  box-sizing: border-box;\n  background: var(--light-color);\n  height: 48px;\n  margin-top: 25px;\n  margin-bottom: 19px;\n  color: var(--primary-color);\n  cursor: pointer;\n  align-self: flex-start;\n}\n\n.SeeCommentsButton:hover {\n  background: var(--gradient-color);\n  color: var(--light-color);\n  transition: 0.2s 0.1s;\n}\n\n.SeeCommentsButton:active {\n  background: var(--primary-color);\n  color: var(--light-color);\n  transition: 0s 0s;\n}\n\n.SeeCommentsButton span {\n  margin: 0 10px;\n  font-family: var(--main-font);\n  font-weight: 200;\n  font-size: 17px;\n  line-height: 24px;\n  pointer-events: none;\n}\n\n.footer {\n  width: 100%;\n  height: 100px;\n  margin-top: 100px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background: var(--primary-color);\n}\n\n.footer__content {\n  max-width: var(--layout-max-width);\n  color: var(--light-color);\n}\n\n.loading {\n  position: absolute;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 100%;\n  height: 100%;\n  opacity: 1;\n  background: rgba(0, 0, 0, 0.5);\n  z-index: 99;\n}\n\n.loader,\n.loader::after {\n  border-radius: 50%;\n  width: 5em;\n  height: 5em;\n}\n\n.loader {\n  margin: 60px auto;\n  font-size: 10px;\n  position: relative;\n  text-indent: -9999em;\n  border-top: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-right: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-left: 1.1em solid #fff;\n  -webkit-transform: translateZ(0);\n  -ms-transform: translateZ(0);\n  transform: translateZ(0);\n  -webkit-animation: load8 1.1s infinite linear;\n  animation: load8 1.1s infinite linear;\n}\n\n@-webkit-keyframes load8 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes load8 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n\n.like-text {\n  font-weight: 100;\n}\n\n.ico {\n  border-radius: 50%;\n  cursor: pointer;\n  fill: #232323;\n  transition: 0.4s;\n}\n\n.liked {\n  transform: scale(1) rotate(360deg);\n  background-color: #c62828;\n  padding: 0.8rem;\n  fill: white;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "html {\n  scroll-behavior: smooth;\n}\n\nbody {\n  margin: 0;\n  font-family: var(--main-font);\n  background:\n    radial-gradient(\n      ellipse farthest-corner at center top,\n      var(--gradient-color) 0%,\n      var(--primary-color) 100%\n    );\n  min-height: 100vh;\n}\n\n.sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  border: 0;\n}\n\n.header {\n  align-items: center;\n  justify-content: space-between;\n  position: unset;\n  width: 100%;\n  z-index: 3;\n  height: 0;\n  margin-bottom: 40px;\n}\n\n.max-width-header {\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: space-around;\n  max-width: var(--layout-max-width);\n  margin: auto;\n}\n\n.header .logo {\n  display: block;\n  float: left;\n  font-size: 27px;\n  padding: 10px 20px;\n  margin-top: 6.5px;\n  text-decoration: none;\n  color: var(--secondary-color);\n  font-style: normal;\n}\n\na {\n  color: #344563;\n  font-family: var(--main-font);\n  font-weight: 400;\n}\n\n.desktopMenu-up {\n  display: block;\n}\n\n.topnav {\n  width: fit-content;\n  font-family: var(--main-font);\n}\n\n.topnav a {\n  text-decoration: none;\n  font-size: 16px;\n  padding: 7px 16px;\n}\n\n.select-tag {\n  appearance: none;\n  outline: 0;\n  border: 0;\n  box-shadow: none;\n  flex: 1;\n  padding: 0 1em;\n  color: var(--light-color);\n  background-color: #0365ac;\n  background-image: none;\n  cursor: pointer;\n  font-size: 16px;\n}\n\n.select {\n  position: relative;\n  width: 20em;\n  height: 3em;\n  border-radius: 0.25em;\n  overflow: hidden;\n  margin-right: 20px;\n}\n\n.select::after {\n  content: \"\\25BC\";\n  position: absolute;\n  top: 0;\n  right: 0;\n  padding: 1em;\n  background-color: #024e85;\n  transition: 0.25s all ease;\n  pointer-events: none;\n}\n\n/* Transition */\n.select:hover::after {\n  color: #29a3fb;\n}\n\n.banner {\n  width: 100%;\n  height: 65vh;\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  margin-bottom: 230px;\n}\n\n.banner h1 {\n  font-size: 45px;\n  color: #dbdbdb;\n  font-family: var(--title-font);\n  height: 30%;\n  margin: 0;\n}\n\n.banner span {\n  height: 19%;\n  margin-top: 60px;\n  color: var(--secondary-color);\n}\n\n.innerAligment {\n  max-width: 550px;\n  min-width: 250px;\n  margin: 30px 30px -70px 30px;\n  text-align: center;\n  height: 140px;\n}\n\n.cards {\n  width: 100%;\n  max-width: var(--layout-max-width);\n  margin: 0 auto;\n  grid-gap: 1rem;\n}\n\n.flex-card {\n  flex-wrap: wrap;\n  max-width: 100%;\n  transition-property: border-color, box-shadow;\n  transition-duration: 1.5s;\n}\n\n.align_images {\n  margin: auto;\n  width: 300px;\n}\n\n.imagen_proyectos {\n  width: 100%;\n  border-radius: 8px;\n}\n\n.text_child h2 {\n  font-weight: 700;\n  line-height: 35px;\n  margin: 15px 0 0 0;\n}\n\n.text_child p {\n  color: #344563;\n  word-break: normal;\n  max-width: 430px;\n}\n\n.text_child {\n  margin-left: 2%;\n  width: 90%;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n}\n\n.card {\n  background-color: var(--light-color);\n  padding: 1rem;\n  margin: 40px 2% 2% 2%;\n  width: 300px;\n  border: 2px solid #dfe1e6;\n  border-radius: 24px;\n}\n\n@media only screen and (min-width: 500px) {\n  .card {\n    margin: 0% 2% 2% 2%;\n  }\n}\n\n.gray_text {\n  color: gray;\n  margin-left: 13px;\n  font-size: 0.8rem;\n}\n\n.SeeCommentsButton {\n  border: 1px solid var(--primary-color);\n  border-radius: 8px;\n  box-sizing: border-box;\n  background: var(--light-color);\n  height: 48px;\n  margin-top: 25px;\n  margin-bottom: 19px;\n  color: var(--primary-color);\n  cursor: pointer;\n  align-self: flex-start;\n}\n\n.SeeCommentsButton:hover {\n  background: var(--gradient-color);\n  color: var(--light-color);\n  transition: 0.2s 0.1s;\n}\n\n.SeeCommentsButton:active {\n  background: var(--primary-color);\n  color: var(--light-color);\n  transition: 0s 0s;\n}\n\n.SeeCommentsButton span {\n  margin: 0 0;\n  font-family: var(--main-font);\n  font-weight: 200;\n  font-size: 17px;\n  line-height: 24px;\n  pointer-events: none;\n}\n\n.footer {\n  width: 100%;\n  height: 100px;\n  margin-top: 100px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background: var(--primary-color);\n}\n\n.footer__content {\n  max-width: var(--layout-max-width);\n  color: var(--light-color);\n}\n\n.loading {\n  position: absolute;\n  display: none;\n  justify-content: center;\n  align-items: center;\n  width: 100%;\n  height: 100%;\n  opacity: 1;\n  background: rgba(0, 0, 0, 0.5);\n  z-index: 99;\n}\n\n.loading-popup {\n  position: absolute;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 300px;\n  height: 300px;\n  opacity: 1;\n  background: rgba(0, 0, 0, 0.5);\n  z-index: 99;\n  border-radius: 8px;\n}\n\n.loading-newcomment {\n  display: none;\n  justify-content: center;\n  align-items: center;\n  width: 100%;\n  height: 90%;\n  opacity: 1;\n  z-index: 99;\n}\n\n.loader,\n.loader::after {\n  border-radius: 50%;\n  width: 5em;\n  height: 5em;\n}\n\n.loader {\n  margin: 60px auto;\n  font-size: 10px;\n  position: relative;\n  text-indent: -9999em;\n  border-top: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-right: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-left: 1.1em solid #fff;\n  -webkit-transform: translateZ(0);\n  -ms-transform: translateZ(0);\n  transform: translateZ(0);\n  -webkit-animation: load8 1.1s infinite linear;\n  animation: load8 1.1s infinite linear;\n}\n\n.loader-comment,\n.loader-comment::after {\n  border-radius: 50%;\n  width: 5em;\n  height: 5em;\n}\n\n.loader-comment {\n  margin: 5px auto;\n  font-size: 5px;\n  position: relative;\n  text-indent: -9997em;\n  border-top:\n    1.1em\n    solid rgba(255, 255, 255, 0.2);\n  border-right:\n    1.1em\n    solid rgba(255, 255, 255, 0.2);\n  border-bottom:\n    1.1em\n    solid rgba(255, 255, 255, 0.2);\n  border-left: 1.1em solid gray;\n  -webkit-transform: translateZ(0);\n  -ms-transform: translateZ(0);\n  transform: translateZ(0);\n  -webkit-animation: load8 1.1s infinite linear;\n  animation: load8 1.1s infinite linear;\n}\n\n@-webkit-keyframes load8 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes load8 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n\n.like-text {\n  font-weight: 100;\n}\n\n.ico {\n  border-radius: 50%;\n  cursor: pointer;\n  fill: #232323;\n  transition: 0.4s;\n}\n\n.liked {\n  transform: scale(1) rotate(360deg);\n  background-color: #c62828;\n  padding: 0.8rem;\n  fill: white;\n}\n\n.container {\n  border: 1px solid lightgray;\n  width: 100%;\n  overflow-y: scroll;\n  min-height: 330px;\n  max-width: 800px;\n  background: #fff;\n  border-radius: 10px;\n  padding: 20px;\n  box-sizing: border-box;\n  box-shadow: rgba(33, 35, 38, 0.5) 0 10px 10px -10px;\n}\n\n.container::-webkit-scrollbar {\n  display: none;\n}\n\n.container__list {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n  display: grid;\n  justify-content: center;\n  grid-template-rows: repeat(1, minmax(min-content, max-content));\n  grid-template-columns: repeat(5, minmax(min-content, max-content));\n  grid-auto-rows: minmax(min-content, max-content);\n  grid-auto-columns: minmax(min-content, max-content);\n}\n\n.container__item {\n  width: 100px;\n  color: #4c6067;\n  min-height: 30px;\n  border-radius: 3px;\n  display: grid;\n  justify-content: center;\n  align-content: center;\n  cursor: pointer;\n  position: relative;\n  font-size: 12px;\n  line-height: 16px;\n  letter-spacing: 1px;\n  font-weight: 400;\n  transition: 0.2s;\n}\n\n.container__item::after {\n  content: \"\";\n  display: block;\n  position: absolute;\n  width: 40%;\n  margin: 0 30%;\n  bottom: 0;\n  border-bottom: 1px solid #4c6067;\n}\n\n.container__item_active {\n  background: #4c6067;\n  box-sizing: border-box;\n  color: #ebfaff;\n  font-weight: 300;\n}\n\n.container__link {\n  margin: 0;\n  padding: 0;\n}\n\n.container__inner {\n  width: 80%;\n  height: 200px;\n  margin: 45px auto 35px;\n}\n\n.content__subtitle {\n  animation-name: smoothTop;\n  animation-duration: 0.3s;\n  font-size: 22px;\n  line-height: 22px;\n  font-weight: 500;\n  color: #404648;\n}\n\n.content__description {\n  animation-name: smoothBottom;\n  animation-duration: 0.7s;\n  font-size: 14px;\n  line-height: 22px;\n  font-weight: 300;\n  color: #404648;\n}\n\n.container__inner_hidden {\n  display: none;\n}\n\n@keyframes smoothTop {\n  0% {\n    opacity: 0.2;\n    transform: translateY(7%);\n  }\n\n  100% {\n    opacity: 1;\n    transform: translateY(0%);\n  }\n}\n\n@keyframes smoothBottom {\n  0% {\n    opacity: 0.2;\n    transform: translateY(-3%);\n  }\n\n  100% {\n    opacity: 1;\n    transform: translateY(0%);\n  }\n}\n\n.display_align {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n}\n\n.iframe {\n  width: 300px;\n}\n", "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"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","sourcesContent":["@import url(\"https://fonts.cdnfonts.com/css/countryside\");\n\nhtml {\n  scroll-behavior: smooth;\n}\n\nbody {\n  margin: 0;\n  font-family: var(--main-font);\n  background:\n    radial-gradient(\n      ellipse farthest-corner at center top,\n      var(--gradient-color) 0%,\n      var(--primary-color) 100%\n    );\n  min-height: 100vh;\n}\n\n.sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  border: 0;\n}\n\n.header {\n  align-items: center;\n  justify-content: space-between;\n  position: unset;\n  width: 100%;\n  z-index: 3;\n  height: 0;\n  margin-bottom: 40px;\n}\n\n.max-width-header {\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: space-around;\n  max-width: var(--layout-max-width);\n  margin: auto;\n}\n\n.header .logo {\n  display: block;\n  float: left;\n  font-size: 27px;\n  padding: 10px 20px;\n  margin-top: 6.5px;\n  text-decoration: none;\n  color: var(--secondary-color);\n  font-style: normal;\n}\n\na {\n  color: #344563;\n  font-family: var(--main-font);\n  font-weight: 400;\n}\n\n.desktopMenu-up {\n  display: block;\n}\n\n.topnav {\n  width: fit-content;\n  font-family: var(--main-font);\n}\n\n.topnav a {\n  text-decoration: none;\n  font-size: 16px;\n  padding: 7px 16px;\n}\n\n.select-tag {\n  appearance: none;\n  outline: 0;\n  border: 0;\n  box-shadow: none;\n  flex: 1;\n  padding: 0 1em;\n  color: var(--light-color);\n  background-color: #0365ac;\n  background-image: none;\n  cursor: pointer;\n  font-size: 16px;\n}\n\n.select {\n  position: relative;\n  width: 20em;\n  height: 3em;\n  border-radius: 0.25em;\n  overflow: hidden;\n  margin-right: 20px;\n}\n\n.select::after {\n  content: \"\\25BC\";\n  position: absolute;\n  top: 0;\n  right: 0;\n  padding: 1em;\n  background-color: #024e85;\n  transition: 0.25s all ease;\n  pointer-events: none;\n}\n\n/* Transition */\n.select:hover::after {\n  color: #29a3fb;\n}\n\n.banner {\n  width: 100%;\n  height: 65vh;\n  background-image: url(\"../assets/loading-image.png\");\n  background-repeat: no-repeat;\n  background-position: center;\n  margin-bottom: 230px;\n}\n\n.banner h1 {\n  font-size: 45px;\n  color: #dbdbdb;\n  font-family: var(--title-font);\n  height: 30%;\n  margin: 0;\n}\n\n.banner span {\n  height: 19%;\n  margin-top: 60px;\n  color: var(--secondary-color);\n}\n\n.innerAligment {\n  max-width: 550px;\n  min-width: 250px;\n  margin: 30px 30px -70px 30px;\n  text-align: center;\n  height: 140px;\n}\n\n.cards {\n  width: 100%;\n  max-width: var(--layout-max-width);\n  margin: 0 auto;\n  grid-gap: 1rem;\n}\n\n.flex-card {\n  flex-wrap: wrap;\n  max-width: 100%;\n  transition-property: border-color, box-shadow;\n  transition-duration: 1.5s;\n}\n\n.align_images {\n  margin: auto;\n  width: 300px;\n}\n\n.imagen_proyectos {\n  width: 100%;\n  border-radius: 8px;\n}\n\n.text_child h2 {\n  font-weight: 700;\n  line-height: 35px;\n  margin: 15px 0 0 0;\n}\n\n.text_child p {\n  color: #344563;\n  word-break: normal;\n  max-width: 430px;\n}\n\n.text_child {\n  margin-left: 2%;\n  width: 90%;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n}\n\n.card {\n  background-color: var(--light-color);\n  padding: 1rem;\n  margin: 40px 2% 2% 2%;\n  width: 300px;\n  border: 2px solid #dfe1e6;\n  border-radius: 24px;\n}\n\n@media only screen and (min-width: 500px) {\n  .card {\n    margin: 0% 2% 2% 2%;\n  }\n}\n\n.gray_text {\n  color: gray;\n  margin-left: 13px;\n  font-size: 0.8rem;\n}\n\n.SeeCommentsButton {\n  border: 1px solid var(--primary-color);\n  border-radius: 8px;\n  box-sizing: border-box;\n  background: var(--light-color);\n  height: 48px;\n  margin-top: 25px;\n  margin-bottom: 19px;\n  color: var(--primary-color);\n  cursor: pointer;\n  align-self: flex-start;\n}\n\n.SeeCommentsButton:hover {\n  background: var(--gradient-color);\n  color: var(--light-color);\n  transition: 0.2s 0.1s;\n}\n\n.SeeCommentsButton:active {\n  background: var(--primary-color);\n  color: var(--light-color);\n  transition: 0s 0s;\n}\n\n.SeeCommentsButton span {\n  margin: 0 0;\n  font-family: var(--main-font);\n  font-weight: 200;\n  font-size: 17px;\n  line-height: 24px;\n  pointer-events: none;\n}\n\n.footer {\n  width: 100%;\n  height: 100px;\n  margin-top: 100px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background: var(--primary-color);\n}\n\n.footer__content {\n  max-width: var(--layout-max-width);\n  color: var(--light-color);\n}\n\n.loading {\n  position: absolute;\n  display: none;\n  justify-content: center;\n  align-items: center;\n  width: 100%;\n  height: 100%;\n  opacity: 1;\n  background: rgba(0, 0, 0, 0.5);\n  z-index: 99;\n}\n\n.loading-popup {\n  position: absolute;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 300px;\n  height: 300px;\n  opacity: 1;\n  background: rgba(0, 0, 0, 0.5);\n  z-index: 99;\n  border-radius: 8px;\n}\n\n.loading-newcomment {\n  display: none;\n  justify-content: center;\n  align-items: center;\n  width: 100%;\n  height: 90%;\n  opacity: 1;\n  z-index: 99;\n}\n\n.loader,\n.loader::after {\n  border-radius: 50%;\n  width: 5em;\n  height: 5em;\n}\n\n.loader {\n  margin: 60px auto;\n  font-size: 10px;\n  position: relative;\n  text-indent: -9999em;\n  border-top: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-right: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-left: 1.1em solid #fff;\n  -webkit-transform: translateZ(0);\n  -ms-transform: translateZ(0);\n  transform: translateZ(0);\n  -webkit-animation: load8 1.1s infinite linear;\n  animation: load8 1.1s infinite linear;\n}\n\n.loader-comment,\n.loader-comment::after {\n  border-radius: 50%;\n  width: 5em;\n  height: 5em;\n}\n\n.loader-comment {\n  margin: 5px auto;\n  font-size: 5px;\n  position: relative;\n  text-indent: -9997em;\n  border-top:\n    1.1em\n    solid rgba(255, 255, 255, 0.2);\n  border-right:\n    1.1em\n    solid rgba(255, 255, 255, 0.2);\n  border-bottom:\n    1.1em\n    solid rgba(255, 255, 255, 0.2);\n  border-left: 1.1em solid gray;\n  -webkit-transform: translateZ(0);\n  -ms-transform: translateZ(0);\n  transform: translateZ(0);\n  -webkit-animation: load8 1.1s infinite linear;\n  animation: load8 1.1s infinite linear;\n}\n\n@-webkit-keyframes load8 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes load8 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n\n.like-text {\n  font-weight: 100;\n}\n\n.ico {\n  border-radius: 50%;\n  cursor: pointer;\n  fill: #232323;\n  transition: 0.4s;\n}\n\n.liked {\n  transform: scale(1) rotate(360deg);\n  background-color: #c62828;\n  padding: 0.8rem;\n  fill: white;\n}\n\n.container {\n  border: 1px solid lightgray;\n  width: 100%;\n  overflow-y: scroll;\n  min-height: 330px;\n  max-width: 800px;\n  background: #fff;\n  border-radius: 10px;\n  padding: 20px;\n  box-sizing: border-box;\n  box-shadow: rgba(33, 35, 38, 0.5) 0 10px 10px -10px;\n}\n\n.container::-webkit-scrollbar {\n  display: none;\n}\n\n.container__list {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n  display: grid;\n  justify-content: center;\n  grid-template-rows: repeat(1, minmax(min-content, max-content));\n  grid-template-columns: repeat(5, minmax(min-content, max-content));\n  grid-auto-rows: minmax(min-content, max-content);\n  grid-auto-columns: minmax(min-content, max-content);\n}\n\n.container__item {\n  width: 100px;\n  color: #4c6067;\n  min-height: 30px;\n  border-radius: 3px;\n  display: grid;\n  justify-content: center;\n  align-content: center;\n  cursor: pointer;\n  position: relative;\n  font-size: 12px;\n  line-height: 16px;\n  letter-spacing: 1px;\n  font-weight: 400;\n  transition: 0.2s;\n}\n\n.container__item::after {\n  content: \"\";\n  display: block;\n  position: absolute;\n  width: 40%;\n  margin: 0 30%;\n  bottom: 0;\n  border-bottom: 1px solid #4c6067;\n}\n\n.container__item_active {\n  background: #4c6067;\n  box-sizing: border-box;\n  color: #ebfaff;\n  font-weight: 300;\n}\n\n.container__link {\n  margin: 0;\n  padding: 0;\n}\n\n.container__inner {\n  width: 80%;\n  height: 200px;\n  margin: 45px auto 35px;\n}\n\n.content__subtitle {\n  animation-name: smoothTop;\n  animation-duration: 0.3s;\n  font-size: 22px;\n  line-height: 22px;\n  font-weight: 500;\n  color: #404648;\n}\n\n.content__description {\n  animation-name: smoothBottom;\n  animation-duration: 0.7s;\n  font-size: 14px;\n  line-height: 22px;\n  font-weight: 300;\n  color: #404648;\n}\n\n.container__inner_hidden {\n  display: none;\n}\n\n@keyframes smoothTop {\n  0% {\n    opacity: 0.2;\n    transform: translateY(7%);\n  }\n\n  100% {\n    opacity: 1;\n    transform: translateY(0%);\n  }\n}\n\n@keyframes smoothBottom {\n  0% {\n    opacity: 0.2;\n    transform: translateY(-3%);\n  }\n\n  100% {\n    opacity: 1;\n    transform: translateY(0%);\n  }\n}\n\n.display_align {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n}\n\n.iframe {\n  width: 300px;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -17972,7 +17972,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _popUpWindow_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./popUpWindow.js */ "./src/popUpWindow.js");
-/* harmony import */ var _involmentAPI__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./involmentAPI */ "./src/involmentAPI.js");
+/* harmony import */ var _involvementAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./involvementAPI.js */ "./src/involvementAPI.js");
 /* harmony import */ var _resetCategoriesAndCountDishes_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./resetCategoriesAndCountDishes.js */ "./src/resetCategoriesAndCountDishes.js");
 
 
@@ -17982,7 +17982,7 @@ const setEventListeners = (dishes) => {
   dishes.forEach((dish) => {
     const likeButton = document.getElementById(`like-${dish.idMeal}`);
     likeButton.addEventListener('click', () => {
-      (0,_involmentAPI__WEBPACK_IMPORTED_MODULE_1__.postLikes)(dish.idMeal);
+      (0,_involvementAPI_js__WEBPACK_IMPORTED_MODULE_1__.postLikes)(dish.idMeal);
     });
 
     const commentButton = document.getElementById(dish.idMeal);
@@ -18007,21 +18007,37 @@ const renderIntro = (categoryInfo) => {
 };
 
 const renderDishesInDOM = (dishes, likes) => {
-  const foodDishes = document.getElementById('foodDishes');
-  console.log(dishes);
+  let userLikes = localStorage.getItem('userLikes');
 
-  likes.forEach((like) => {
-    dishes.forEach((dish) => {
+  if (userLikes && userLikes.length) {
+    userLikes = JSON.parse(userLikes);
+  } else {
+    userLikes = [];
+  }
+
+  const foodDishes = document.getElementById('foodDishes');
+
+  dishes.forEach((dish) => {
+    likes.forEach((like) => {
       if (dish.idMeal === like.item_id) {
         dish.likes = like.likes;
+      }
+    });
+
+    userLikes.forEach((savedLike) => {
+      if (dish.idMeal === savedLike) {
+        dish.savedLike = true;
       }
     });
   });
 
   let html = '';
   for (let x = 0; x < dishes.length; x += 1) {
-    html += `<div class="card division flex-card dflex-row">
-        <div class="align_images">
+    html += `<div class="card division flex-card dflex-row" >
+
+  
+
+        <div class="align_images" id="card-${dishes[x].idMeal}">
           <img
             src="${dishes[x].strMealThumb}"
             width="554"
@@ -18040,7 +18056,9 @@ const renderDishesInDOM = (dishes, likes) => {
 }>
             <span>Comments</span>
             </button>
-            <svg class="ico" id='like-${
+            <svg ${
+  dishes[x].savedLike ? "class='ico liked'" : "class='ico'"
+} id='like-${
   dishes[x].idMeal
 }' width="24" height="24" viewBox="0 0 24 24">
             
@@ -18081,7 +18099,7 @@ const getDishesFromCategory = async (categories, id) => {
   }
 
   (0,_resetCategoriesAndCountDishes_js__WEBPACK_IMPORTED_MODULE_2__.resetCategoriesAndCountDishes)(dishes, categories, id);
-  const updatedLikes = await (0,_involmentAPI__WEBPACK_IMPORTED_MODULE_1__.getLikes)(dishes);
+  const updatedLikes = await (0,_involvementAPI_js__WEBPACK_IMPORTED_MODULE_1__.getLikes)(dishes);
   renderDishesInDOM(dishes, updatedLikes);
   setEventListeners(dishes);
   loading.style.display = 'none';
@@ -18092,10 +18110,52 @@ const getDishesFromCategory = async (categories, id) => {
 
 /***/ }),
 
-/***/ "./src/involmentAPI.js":
-/*!*****************************!*\
-  !*** ./src/involmentAPI.js ***!
-  \*****************************/
+/***/ "./src/innerMenu.js":
+/*!**************************!*\
+  !*** ./src/innerMenu.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "convertYoutubeLink": () => (/* binding */ convertYoutubeLink),
+/* harmony export */   "innerMenu": () => (/* binding */ innerMenu)
+/* harmony export */ });
+const convertYoutubeLink = (link) => {
+  const iframe = document.getElementById('iframe');
+  const id = link.split('?v=')[1];
+  const newLink = `https://www.youtube.com/embed/${id}`;
+  iframe.src = newLink;
+};
+
+const innerMenu = () => {
+  const tabContent = document.querySelectorAll('.container__inner');
+  const tabItem = document.querySelectorAll('.container__item');
+
+  for (let i = 0; i < tabItem.length; i += 1) {
+    tabItem[i].addEventListener('mouseover', () => {
+      tabContent.forEach((item) => {
+        item.classList.add('container__inner_hidden');
+      });
+
+      tabItem.forEach((item) => {
+        item.classList.remove('container__item_active');
+      });
+
+      tabContent[i].classList.remove('container__inner_hidden');
+      tabItem[i].classList.add('container__item_active');
+    });
+  }
+};
+
+
+/***/ }),
+
+/***/ "./src/involvementAPI.js":
+/*!*******************************!*\
+  !*** ./src/involvementAPI.js ***!
+  \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -18116,9 +18176,8 @@ const getLikes = async () => {
     likesOfDishes = await likesOfDishes.json();
     return likesOfDishes;
   } catch (err) {
-    console.log(err);
+    return null;
   }
-  return null;
 };
 
 const addComment = async (comment) => {
@@ -18133,6 +18192,9 @@ const addComment = async (comment) => {
       },
     },
   );
+  document.querySelector('#comment-name').value = '';
+  document.querySelector('#comment-text').value = '';
+
   return response;
 };
 
@@ -18150,37 +18212,42 @@ const fetchComments = async (mealId) => {
 
 const postLikes = async (id) => {
   const likeButton = document.getElementById(`like-${id}`);
-  if (likeButton.classList.contains('liked')) {
-    console.log('not allowed to like two times');
-  } else {
-    try {
-      likeButton.classList.add('liked');
-      await fetch(
-        `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${UniqueId}/likes/`,
-        {
-          method: 'POST',
-          mode: 'cors',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            item_id: id,
-          }),
+  if (likeButton.classList.contains('liked')) return null;
+  try {
+    likeButton.classList.add('liked');
+    await fetch(
+      `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${UniqueId}/likes/`,
+      {
+        method: 'POST',
+        mode: 'cors',
+        headers: {
+          'Content-Type': 'application/json',
         },
-      );
-    } catch (err) {
-      console.log(err);
-    }
-
-    const likeCounter = document.getElementById(`likeCounter-${id}`);
-    const newNumberOfLikes = Number(likeCounter.innerHTML.split(' ')[0]) + 1;
-
-    likeCounter.innerHTML = `${newNumberOfLikes} Like${
-      newNumberOfLikes > 1 ? 's' : ''
-    }`;
-    return newNumberOfLikes;
+        body: JSON.stringify({
+          item_id: id,
+        }),
+      },
+    );
+  } catch (err) {
+    return null;
   }
-  return null;
+
+  const likeCounter = document.getElementById(`likeCounter-${id}`);
+  const newNumberOfLikes = Number(likeCounter.innerHTML.split(' ')[0]) + 1;
+
+  likeCounter.innerHTML = `${newNumberOfLikes} Like${
+    newNumberOfLikes > 1 ? 's' : ''
+  }`;
+
+  let userLikes = localStorage.getItem('userLikes');
+  if (userLikes && userLikes.length) {
+    userLikes = JSON.parse(userLikes);
+    userLikes.push(id);
+    localStorage.setItem('userLikes', JSON.stringify(userLikes));
+  } else {
+    localStorage.setItem('userLikes', JSON.stringify([id]));
+  }
+  return newNumberOfLikes;
 };
 
 
@@ -18200,7 +18267,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _involmentAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./involmentAPI.js */ "./src/involmentAPI.js");
+/* harmony import */ var _innerMenu_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./innerMenu.js */ "./src/innerMenu.js");
+/* harmony import */ var _involvementAPI_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./involvementAPI.js */ "./src/involvementAPI.js");
+
+
 
 
 
@@ -18227,13 +18297,15 @@ const displayComments = (mealComments) => {
     commentsContainer.insertAdjacentHTML(
       'beforeend',
       `
-    <div class="comments-list__item no-comments">
+    <div class="comments-list__item no-comments errorComments">
     <p>No comments to display</p>
     </div>
     `,
     );
+
     return;
   }
+
   commentsHeader.innerHTML = `${
     numberOfComments > 1 ? 'Comments' : 'Comment'
   } (${numberOfComments})`;
@@ -18263,62 +18335,128 @@ const displayComments = (mealComments) => {
 };
 
 const displayPopUpCommentWindow = async (dishIdMeal) => {
-  const mealComments = await (0,_involmentAPI_js__WEBPACK_IMPORTED_MODULE_1__.fetchComments)(dishIdMeal);
+  const loadingPopupCard = document.getElementById(`card-${dishIdMeal}`);
+  loadingPopupCard.insertAdjacentHTML(
+    'afterbegin',
+    `<div id="loading-${dishIdMeal}" class="loading-popup">
+  <div class="loader">Loading...</div>
+</div>`,
+  );
+  const loading = document.getElementById(`loading-${dishIdMeal}`);
+  loading.style.display = 'flex';
+
+  const mealComments = await (0,_involvementAPI_js__WEBPACK_IMPORTED_MODULE_2__.fetchComments)(dishIdMeal);
   let dish = await fetch(
     `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${dishIdMeal}`,
   );
   dish = await dish.json();
   [dish] = dish.meals;
+
+  let ingredient = '';
+  for (let x = 1; x <= 20; x += 1) {
+    if (dish[`strIngredient${x}`] === null || dish[`strIngredient${x}`] === '') break;
+    ingredient += `<span><strong>${dish[`strIngredient${x}`]}:</strong>  ${
+      dish[`strMeasure${x}`]
+    }</span>`;
+  }
+
   popUpCommentWindow.parentElement.classList.remove('popup-window--hidden');
   popUpCommentWindow.parentElement.classList.add('popup-window--visible');
+  popUpCommentWindow.scrollTo(0, 0);
   popUpCommentWindow.innerHTML = `
   <header class="popup-window__header">
       <button class="popup-window__close comments-popup__close" id="popup-window__close">&times;</button>
-      <img src="${dish.strMealThumb}" alt="${dish.strMeal}" class="popup-image" width="400">
+      <img src="${dish.strMealThumb}" alt="${dish.strMeal}" class="popup-image" width=300;>
       <h3> ${dish.strMeal} </h3>
   </header>
-  <nav className="meal-navigation">
-      <button class="SeeCommentsButton">Ingredients</button>
-      <button class="SeeCommentsButton">Video</button>
-      <button class="SeeCommentsButton">Recipe</button>
-  </nav>
+  <div class="container">
+  <ul class="container__list">
+    <li class="container__item container__item_active">
+      <span class="container__link">Instructions</span>
+    </li>
+    <li class="container__item">
+      <span class="container__link">Ingredients</span>
+    </li>
+    <li class="container__item">
+      <span class="container__link">Video</span>
+    </li>
+   
+   
+  </ul>
+  <div class="container__inner">
+    <h2 class="content__subtitle">Intructions</h2>
+    <p class="content__description">
+    ${dish.strInstructions}
+    </p>
+  </div>
+  <div class="container__inner container__inner_hidden">
+    <h2 class="content__subtitle">Ingredients</h2>
+    <p class="content__description dflex-column-alignLeft-justifyCenter">
+    ${ingredient}
+    </p>
+  </div>
+  <div class="container__inner container__inner_hidden">
+      <div class="display_align container__inner">
+          <iframe id="iframe" class="iframe" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </div>
+  </div>
+  
+  
+</div>
   <section class="meals-comments dflex-column-alignCenter-justifyCenter"> 
     <h3 class="comments-header"></h3>
-    <ul class="comments-list dflex-column-alignCenter-justifyFlexStart"></ul>
+    <ul class="comments-list dflex-column-alignCenter-justifyFlexStart" id="commentBox"></ul>
   </section>
   <h3>Add a comment</h3>
   <form class="comments-form dflex-column-alignCenter-justifyCenter">
-    <label for="comment-name" hidden>Name</label>
-    <input type="text" id="comment-name" placeholder="Your name" required>
-    <label for="comment-text" hidden>Comment</label>
-    <textarea id="comment-text" placeholder="Your comment" required></textarea>
-    <button type="submit" class="comments-form__submit SeeCommentsButton">Comment</button>
+  <label for="comment-name" hidden>Name</label>
+  <input type="text" maxlength="250" id="comment-name" placeholder="Your name" required>
+  <label for="comment-text" hidden>Comment</label>
+  <textarea id="comment-text" placeholder="Your comment" required></textarea>
+  <button type="submit" id="newcomment-button" class="comments-form__submit SeeCommentsButton"><div id="loading-newcomment" class="loading-newcomment">
+  <div class="loader-comment">Loading...</div>
+</div><span id="new-comment-text">Comment</span></button>
   `;
 
+  (0,_innerMenu_js__WEBPACK_IMPORTED_MODULE_1__.innerMenu)();
+  (0,_innerMenu_js__WEBPACK_IMPORTED_MODULE_1__.convertYoutubeLink)(dish.strYoutube);
+
   const closePopUpWindow = document.getElementById('popup-window__close');
+  const iframe = document.getElementById('iframe');
   const commentsForm = document.querySelector('.comments-form');
 
   closePopUpWindow.addEventListener('click', () => {
     popUpCommentWindow.parentElement.classList.add('popup-window--hidden');
     popUpCommentWindow.parentElement.classList.remove('popup-window--visible');
+    iframe.src = '';
   });
   commentsForm.addEventListener('submit', async (event) => {
+    const loading = document.getElementById('loading-newcomment');
+    const textComment = document.getElementById('new-comment-text');
     event.preventDefault();
     const comment = {
       username: event.target.querySelector('#comment-name').value,
       comment: event.target.querySelector('#comment-text').value,
       item_id: dishIdMeal,
     };
+    loading.style.display = 'flex';
+    textComment.style.display = 'none';
 
-    const response = await (0,_involmentAPI_js__WEBPACK_IMPORTED_MODULE_1__.addComment)(comment);
+    const response = await (0,_involvementAPI_js__WEBPACK_IMPORTED_MODULE_2__.addComment)(comment);
     if (response.status === 201) {
-      const mealComments = await (0,_involmentAPI_js__WEBPACK_IMPORTED_MODULE_1__.fetchComments)(dishIdMeal);
+      const mealComments = await (0,_involvementAPI_js__WEBPACK_IMPORTED_MODULE_2__.fetchComments)(dishIdMeal);
       displayComments(mealComments);
+      loading.style.display = 'none';
+      textComment.style.display = 'block';
+
       commentsContainer.scrollTop = commentsContainer.scrollHeight;
     }
   });
   displayComments(mealComments);
   commentsCount(mealComments);
+  loading.style.display = 'none';
+  loading.remove();
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (displayPopUpCommentWindow);
@@ -18552,8 +18690,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/style.css */ "./src/styles/style.css");
 /* harmony import */ var _styles_common_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/common.css */ "./src/styles/common.css");
 /* harmony import */ var _styles_popUpWindow_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/popUpWindow.css */ "./src/styles/popUpWindow.css");
-/* harmony import */ var _renderFooter__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./renderFooter */ "./src/renderFooter.js");
-/* harmony import */ var _getDishesFromCategory__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./getDishesFromCategory */ "./src/getDishesFromCategory.js");
+/* harmony import */ var _renderFooter_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./renderFooter.js */ "./src/renderFooter.js");
+/* harmony import */ var _getDishesFromCategory_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./getDishesFromCategory.js */ "./src/getDishesFromCategory.js");
 
 
 
@@ -18573,13 +18711,13 @@ window.onload = async () => {
 
   categories = await categories.json();
   categories = categories.categories;
-  (0,_renderFooter__WEBPACK_IMPORTED_MODULE_3__["default"])();
+  (0,_renderFooter_js__WEBPACK_IMPORTED_MODULE_3__["default"])();
 
   categorySelector.addEventListener('change', (event) => {
-    (0,_getDishesFromCategory__WEBPACK_IMPORTED_MODULE_4__["default"])(categories, event.target.value);
+    (0,_getDishesFromCategory_js__WEBPACK_IMPORTED_MODULE_4__["default"])(categories, event.target.value);
   });
 
-  (0,_getDishesFromCategory__WEBPACK_IMPORTED_MODULE_4__["default"])(categories, '1');
+  (0,_getDishesFromCategory_js__WEBPACK_IMPORTED_MODULE_4__["default"])(categories, '1');
 
   loading.style.display = 'none';
 };

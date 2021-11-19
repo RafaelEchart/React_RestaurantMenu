@@ -1,10 +1,7 @@
 export const convertYoutubeLink = (link) => {
-  // https://www.youtube.com/watch?v=ONX74yP6JnI
-  // https://www.youtube.com/embed/ONX74yP6JnI
   const iframe = document.getElementById('iframe');
   const id = link.split('?v=')[1];
   const newLink = `https://www.youtube.com/embed/${id}`;
-  console.log(newLink);
   iframe.src = newLink;
 };
 

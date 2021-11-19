@@ -2,24 +2,22 @@
 
 # Restaurant Capstone
 
-> This project is in progress.
-  
+> Restaurant Capstone Project
 
-
-<!-- ![screenshot](./src/README/app_screenshot.gif)
+![screenshot](./src/README/app_screenshot.gif)
 
 ## Built With
 
-- HTML & CSS & Javascript
-- [API: Leaderboard](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3)
-- [Notfy.js](https://www.npmjs.com/package/notyf)
-- Webpack and Webpack-dev-server
-- Linters: Stylelint and Eslint
+- HTML, SCSS/CSS, and Javascript
+- [themealdb API](https://www.themealdb.com/api.php)
+- [Involvement API](https://www.notion.so/microverse/Involvement-API-869e60b5ad104603aa6db59e08150270) Our API unique ID is: `xFhLPbE0OxSNE2QeBp9w`
+- [Webpack](https://webpack.js.org/)
+- [Jest](https://jestjs.io/)
+- [Linters](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.github/workflows/linters.yml)
 
 ## Live Demo
 
-[Live Demo Link](https://rafaelechart.github.io/Leaderboard/dist/)
-
+[Live Demo Link](https://rafaelechart.github.io/RestaurantMenu_Capstone/)
 
 ## Getting Started
 
@@ -28,20 +26,19 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 - Node js installed
-- Visual Studio Code (or any other code editor)
 - Terminal
 - Browser of your preference
 
 ### Setup
 
-- git clone https://github.com/RafaelEchart/Leaderboard.git
-- cd Leaderboard
+- git clone https://github.com/RafaelEchart/RestaurantMenu_Capstone.git
+- cd RestaurantMenu_Capstone
 
 ### Install
 
 Inside of your directory run the following commands:
 
-- npm install 
+- npm install
 - npm run build
 - npm run start
 
@@ -51,24 +48,17 @@ Inside of your directory run the following commands:
 
 ![localhost](./src/README/localhost.png)
 
-
-
 ### How to edit
 
 If you wish to edit this project you need to run the following command too:
 
-- npm watch
+- `npm run watch`
 
-This will allow you to see a hot refresh in the browser when your HTML changes. 
+This will allow you to see a hot refresh in the browser when your HTML changes.
 
 ### Run tests
 
-- Check that all the tests are correctly passed🤝
-
-### Merge
-
-- Merge it with your main branch so we can all see your work!!🤝
-
+Run the following command to run the tests: `npm run test`
 
 ## Authors
 
@@ -77,11 +67,14 @@ This will allow you to see a hot refresh in the browser when your HTML changes.
 - GitHub: [@rafaelechart](https://github.com/rafaelechart)
 - Twitter: [@rafaechart](https://twitter.com/rafaechart)
 
+👤 **Amr Ahmed**
+
+- GitHub: [@Amrhub](https://github.com/Amrhub/)
+- LinkedIn: [Amr Ahmed](https://www.linkedin.com/in/amr-ahmed-655420191/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-
 
 ## Show your support
 
@@ -90,7 +83,11 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Rafael Echart⭐️
+- Amr Ahmed⭐️
 - Microverse documentation ⭐️
+- Microverse team ⭐️
+- mealdb API ⭐️
+- involvement API ⭐️
 
 ## 📝 License
 

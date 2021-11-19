@@ -1,5 +1,5 @@
 import displayPopUpCommentWindow from './popUpWindow.js';
-import { getLikes, postLikes } from './involmentAPI';
+import { getLikes, postLikes } from './involvementAPI.js';
 import { resetCategoriesAndCountDishes } from './resetCategoriesAndCountDishes.js';
 
 const setEventListeners = (dishes) => {
@@ -40,7 +40,6 @@ const renderDishesInDOM = (dishes, likes) => {
   }
 
   const foodDishes = document.getElementById('foodDishes');
-  console.log(dishes);
 
   dishes.forEach((dish) => {
     likes.forEach((like) => {
@@ -55,8 +54,6 @@ const renderDishesInDOM = (dishes, likes) => {
       }
     });
   });
-
-  console.log(dishes);
 
   let html = '';
   for (let x = 0; x < dishes.length; x += 1) {
@@ -83,7 +80,9 @@ const renderDishesInDOM = (dishes, likes) => {
 }>
             <span>Comments</span>
             </button>
-            <svg ${dishes[x].savedLike ? "class='ico liked'" : "class='ico'"} id='like-${
+            <svg ${
+  dishes[x].savedLike ? "class='ico liked'" : "class='ico'"
+} id='like-${
   dishes[x].idMeal
 }' width="24" height="24" viewBox="0 0 24 24">
             

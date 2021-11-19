@@ -1,4 +1,4 @@
-import { calculateItems } from '../resetCategoriesAndCountDishes';
+import { calculateItems } from '../resetCategoriesAndCountDishes.js';
 
 describe('Test de items counter from home screen', () => {
   test('Mock an array of 6 items (dishes) and expect the function to count them (6)', () => {

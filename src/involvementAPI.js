@@ -8,9 +8,8 @@ export const getLikes = async () => {
     likesOfDishes = await likesOfDishes.json();
     return likesOfDishes;
   } catch (err) {
-    console.log(err);
+    return null;
   }
-  return null;
 };
 
 export const addComment = async (comment) => {
@@ -45,47 +44,40 @@ export const fetchComments = async (mealId) => {
 
 export const postLikes = async (id) => {
   const likeButton = document.getElementById(`like-${id}`);
-  if (likeButton.classList.contains('liked')) {
-    console.log('not allowed to like two times');
-  } else {
-    try {
-      likeButton.classList.add('liked');
-      await fetch(
-        `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${UniqueId}/likes/`,
-        {
-          method: 'POST',
-          mode: 'cors',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            item_id: id,
-          }),
+  if (likeButton.classList.contains('liked')) return null;
+  try {
+    likeButton.classList.add('liked');
+    await fetch(
+      `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${UniqueId}/likes/`,
+      {
+        method: 'POST',
+        mode: 'cors',
+        headers: {
+          'Content-Type': 'application/json',
         },
-      );
-    } catch (err) {
-      console.log(err);
-    }
-
-    const likeCounter = document.getElementById(`likeCounter-${id}`);
-    const newNumberOfLikes = Number(likeCounter.innerHTML.split(' ')[0]) + 1;
-
-    likeCounter.innerHTML = `${newNumberOfLikes} Like${
-      newNumberOfLikes > 1 ? 's' : ''
-    }`;
-
-    let userLikes = localStorage.getItem('userLikes');
-    if (userLikes && userLikes.length) {
-      userLikes = JSON.parse(userLikes);
-      console.log(userLikes);
-
-      userLikes.push(id);
-
-      localStorage.setItem('userLikes', JSON.stringify(userLikes));
-    } else {
-      localStorage.setItem('userLikes', JSON.stringify([id]));
-    }
-    return newNumberOfLikes;
+        body: JSON.stringify({
+          item_id: id,
+        }),
+      },
+    );
+  } catch (err) {
+    return null;
   }
-  return null;
+
+  const likeCounter = document.getElementById(`likeCounter-${id}`);
+  const newNumberOfLikes = Number(likeCounter.innerHTML.split(' ')[0]) + 1;
+
+  likeCounter.innerHTML = `${newNumberOfLikes} Like${
+    newNumberOfLikes > 1 ? 's' : ''
+  }`;
+
+  let userLikes = localStorage.getItem('userLikes');
+  if (userLikes && userLikes.length) {
+    userLikes = JSON.parse(userLikes);
+    userLikes.push(id);
+    localStorage.setItem('userLikes', JSON.stringify(userLikes));
+  } else {
+    localStorage.setItem('userLikes', JSON.stringify([id]));
+  }
+  return newNumberOfLikes;
 };

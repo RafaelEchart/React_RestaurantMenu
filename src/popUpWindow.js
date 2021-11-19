@@ -1,7 +1,7 @@
 import _ from 'lodash';
-import { innerMenu, convertYoutubeLink } from './innerMenu';
+import { innerMenu, convertYoutubeLink } from './innerMenu.js';
 
-import { addComment, fetchComments } from './involmentAPI.js';
+import { addComment, fetchComments } from './involvementAPI.js';
 
 const popUpCommentWindow = document.getElementById('popup-comments-window');
 let commentsContainer;
@@ -65,9 +65,12 @@ const displayComments = (mealComments) => {
 
 const displayPopUpCommentWindow = async (dishIdMeal) => {
   const loadingPopupCard = document.getElementById(`card-${dishIdMeal}`);
-  loadingPopupCard.insertAdjacentHTML('afterbegin', `<div id="loading-${dishIdMeal}" class="loading-popup">
+  loadingPopupCard.insertAdjacentHTML(
+    'afterbegin',
+    `<div id="loading-${dishIdMeal}" class="loading-popup">
   <div class="loader">Loading...</div>
-</div>`);
+</div>`,
+  );
   const loading = document.getElementById(`loading-${dishIdMeal}`);
   loading.style.display = 'flex';
 
@@ -81,7 +84,9 @@ const displayPopUpCommentWindow = async (dishIdMeal) => {
   let ingredient = '';
   for (let x = 1; x <= 20; x += 1) {
     if (dish[`strIngredient${x}`] === null || dish[`strIngredient${x}`] === '') break;
-    ingredient += `<span><strong>${dish[`strIngredient${x}`]}:</strong>  ${dish[`strMeasure${x}`]}</span>`;
+    ingredient += `<span><strong>${dish[`strIngredient${x}`]}:</strong>  ${
+      dish[`strMeasure${x}`]
+    }</span>`;
   }
 
   popUpCommentWindow.parentElement.classList.remove('popup-window--hidden');
@@ -157,7 +162,7 @@ const displayPopUpCommentWindow = async (dishIdMeal) => {
   });
   commentsForm.addEventListener('submit', async (event) => {
     const loading = document.getElementById('loading-newcomment');
-    const textcomment = document.getElementById('new-comment-text');
+    const textComment = document.getElementById('new-comment-text');
     event.preventDefault();
     const comment = {
       username: event.target.querySelector('#comment-name').value,
@@ -165,14 +170,14 @@ const displayPopUpCommentWindow = async (dishIdMeal) => {
       item_id: dishIdMeal,
     };
     loading.style.display = 'flex';
-    textcomment.style.display = 'none';
+    textComment.style.display = 'none';
 
     const response = await addComment(comment);
     if (response.status === 201) {
       const mealComments = await fetchComments(dishIdMeal);
       displayComments(mealComments);
       loading.style.display = 'none';
-      textcomment.style.display = 'block';
+      textComment.style.display = 'block';
 
       commentsContainer.scrollTop = commentsContainer.scrollHeight;
     }

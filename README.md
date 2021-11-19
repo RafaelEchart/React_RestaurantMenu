@@ -20,6 +20,10 @@
 
 [Live Demo Link](https://rafaelechart.github.io/RestaurantMenu_Capstone/)
 
+## Capstone Overview
+
+[Watch video](https://drive.google.com/file/d/1tcHf2zilMFW-HCkPU4PMbI2r1AYlN-O1/view)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.

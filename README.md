@@ -18,7 +18,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://rafaelechart.github.io/RestaurantMenu_Capstone/)
+[Live Demo Link](https://rafaelechart.github.io/RestaurantMenu_Capstone/dist/)
 
 ## Capstone Overview
 

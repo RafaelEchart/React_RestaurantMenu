@@ -18,7 +18,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://rafaelechart.github.io/RestaurantMenu_Capstone/dist/)
+[Live Demo Link](https://infallible-feynman-bae919.netlify.app/)
 
 ## Capstone Overview
 
@@ -36,8 +36,8 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-- git clone https://github.com/RafaelEchart/RestaurantMenu_Capstone.git
-- cd RestaurantMenu_Capstone
+- git clone https://github.com/RafaelEchart/React_RestaurantMenu.git
+- cd React_RestaurantMenu
 
 ### Install
 
